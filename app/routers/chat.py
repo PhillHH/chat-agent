@@ -45,9 +45,14 @@ async def handle_message(message: UserMessage, request: Request) -> BotResponse:
 
     # 4. Entscheidung: Restore oder Eskalation
     if escalation:
-        # Eskalation: Teams-Notify mit anonymisiertem Verlauf (MVP: letzter Prompt).
+        # Eskalation: Teams-Notify mit GANZEM Verlauf aus dem Thread
+        full_history = assistant.get_thread_history(session_id)
+        if not full_history:
+             # Fallback, falls History-Fetch fehlschlägt
+            full_history = [f"Kundenfrage (anonymisiert): {anonymized_prompt}"]
+
         await notifier.notify_escalation(
-            session_id, chat_history=[f"Kundenfrage (anonymisiert): {anonymized_prompt}"]
+            session_id, chat_history=full_history
         )
         vault.set_status(session_id, "HUMAN")
         return BotResponse(

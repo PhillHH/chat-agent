@@ -1,11 +1,14 @@
 """PII-Scanner des Secure AI Gateways: anonymisiert Eingaben (Regex + GLiNER)
 und stellt Originalwerte nach der KI-Antwort wieder her (Re-Personalisierung)."""
 import re
+import logging
 from typing import List, Dict, Any
 
 from gliner import GLiNER
 
 from app.core.vault import PIIVault, vault
+
+logger = logging.getLogger(__name__)
 
 
 class PIIScanner:
@@ -48,6 +51,7 @@ class PIIScanner:
         - GLiNER-Phase (Person/Organisation/Stadt) mit Score-Filter.
         - Platzhalter werden im Vault abgelegt und ersetzen den Textinhalt.
         """
+        original_text = text
         # Schritt A: Regex-basierte PII vorab entfernen
         text = self._clean_regex(text)
 
@@ -72,6 +76,7 @@ class PIIScanner:
             placeholder = self.vault.store(original, label)
             text = text[:start] + placeholder + text[end:]
 
+        logger.info(f"PII Clean: Original='{original_text}' -> Anonymized='{text}'")
         return text
 
     def restore(self, text: str) -> str:

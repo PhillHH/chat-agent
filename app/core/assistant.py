@@ -2,7 +2,8 @@
 Eskalationslogik für das Secure AI Gateway."""
 import os
 import time
-from typing import Dict, Tuple
+import logging
+from typing import Dict, Tuple, List
 
 from openai import OpenAI
 
@@ -45,6 +46,7 @@ class AIAssistant:
             self._threads[session_id] = thread_id
 
         # Nachricht in den Thread legen
+        logging.info(f"OpenAI Request [Session {session_id}]: {prompt}")
         self.client.beta.threads.messages.create(
             thread_id=thread_id,
             role="user",
@@ -76,11 +78,38 @@ class AIAssistant:
             return "", True
 
         content = latest_message.content[0].text.value
+        logging.info(f"OpenAI Response [Session {session_id}]: {content}")
 
         # Eskalationssignal prüfen
         if "ESKALATION_NOETIG" in content:
+            logging.info(f"Escalation triggered by AI response: {content}")
             return "", True
 
         return content, False
 
+    def get_thread_history(self, session_id: str) -> List[str]:
+        """Ruft den gesamten Chat-Verlauf aus dem OpenAI Thread ab."""
+        thread_id = self._threads.get(session_id)
+        if not thread_id:
+            return []
+
+        try:
+            # Hole alle Nachrichten im Thread (default sort ist desc, also neuste zuerst)
+            messages = self.client.beta.threads.messages.list(
+                thread_id=thread_id,
+                order="asc",  # Wir wollen chronologische Reihenfolge
+                limit=100
+            )
+
+            history = []
+            for msg in messages.data:
+                role = msg.role  # 'user' oder 'assistant'
+                if msg.content:
+                    text = msg.content[0].text.value
+                    history.append(f"{role.capitalize()}: {text}")
+
+            return history
+        except Exception as e:
+            logging.error(f"Failed to fetch thread history for session {session_id}: {e}")
+            return []
 
