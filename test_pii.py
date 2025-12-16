@@ -1,7 +1,8 @@
 import os
+import asyncio
 
 # Wir simulieren die Umgebungsvariablen für den Test
-os.environ["REDIS_HOST"] = "redis"
+os.environ["REDIS_HOST"] = "127.0.0.1"  # Fix: Localhost for testing
 os.environ["OPENAI_API_KEY"] = "dummy"  # Wird hier nicht gebraucht
 os.environ["TEAMS_WEBHOOK_URL"] = "dummy"
 
@@ -10,7 +11,7 @@ from app.core.scanner import PIIScanner
 from app.core.database import get_redis_client
 
 
-def run_test():
+async def run_test():
     print("⏳ Initialisiere Systeme (Lade GLiNER Modell... das kann kurz dauern)...")
 
     # 1. Setup
@@ -25,8 +26,8 @@ def run_test():
     )
     print(f"\n📝 Original: {text}")
 
-    # 3. Die 'Waschstraße' (Clean)
-    anonymized_text = scanner.clean(text)
+    # 3. Die 'Waschstraße' (Clean) - Jetzt async!
+    anonymized_text = await scanner.clean(text)
     print(f"🛡️  Gefiltert: {anonymized_text}")
 
     # 4. Überprüfung
@@ -37,5 +38,4 @@ def run_test():
 
 
 if __name__ == "__main__":
-    run_test()
-
+    asyncio.run(run_test())

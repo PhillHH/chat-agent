@@ -3,6 +3,7 @@
 (Re-Personalisierung)."""
 import re
 import logging
+import asyncio
 from typing import List, Dict, Any
 
 from gliner import GLiNER
@@ -43,7 +44,7 @@ class PIIScanner:
         text = self.phone_pattern.sub(replace_phone, text)
         return text
 
-    def clean(self, text: str) -> str:
+    async def clean(self, text: str) -> str:
         """Anonymisiert PII, indem erkannte Werte durch Vault-Platzhalter
         ersetzt werden; erfüllt den DSGVO-Schritt vor der Modellnutzung.
 
@@ -57,8 +58,13 @@ class PIIScanner:
         text = self._clean_regex(text)
 
         # Schritt B: GLiNER-Entities erkennen
-        entities: List[Dict[str, Any]] = self.model.predict_entities(
-            text, labels=["person", "organization", "city"]
+        # CPU-intensive Tasks in ThreadPool auslagern, um Blocking zu verhindern
+        loop = asyncio.get_running_loop()
+        entities: List[Dict[str, Any]] = await loop.run_in_executor(
+            None,
+            lambda: self.model.predict_entities(
+                text, labels=["person", "organization", "city"]
+            )
         )
 
         # Schritt C: Platzhalter einsetzen (von hinten nach vorne, um Indizes stabil zu halten)
@@ -94,4 +100,3 @@ class PIIScanner:
             return self.vault.get(placeholder)
 
         return self.placeholder_pattern.sub(replace_placeholder, text)
-

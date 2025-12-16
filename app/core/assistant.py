@@ -1,11 +1,11 @@
 """Steuert die Kommunikation mit der OpenAI Assistant API inkl.
 Eskalationslogik für das Secure PolarisDX AI-Chat Gateway."""
 import os
-import time
+import asyncio
 import logging
 from typing import Dict, Tuple, List
 
-from openai import OpenAI
+from openai import AsyncOpenAI
 
 from app.core.config import settings
 
@@ -19,12 +19,12 @@ class AIAssistant:
 
     def __init__(self) -> None:
         api_key = settings.openai_api_key or os.getenv("OPENAI_API_KEY", "")
-        self.client = OpenAI(api_key=api_key)
+        self.client = AsyncOpenAI(api_key=api_key)
         # Merkt sich pro Session den zugehörigen Thread der Assistant API.
         self._threads: Dict[str, str] = {}
         self.assistant_id = ASSISTANT_ID
 
-    def ask_assistant(self, session_id: str, prompt: str) -> Tuple[str, bool]:
+    async def ask_assistant(self, session_id: str, prompt: str) -> Tuple[str, bool]:
         """Sendet den Prompt an den Assistant und prüft, ob eskaliert werden muss.
 
         Rückgabe:
@@ -39,7 +39,7 @@ class AIAssistant:
         """
         thread_id = self._threads.get(session_id)
         if thread_id is None:
-            thread = self.client.beta.threads.create(
+            thread = await self.client.beta.threads.create(
                 metadata={"session_id": session_id, "app": "SecureGateway"}
             )
             thread_id = thread.id
@@ -47,7 +47,7 @@ class AIAssistant:
 
         # Nachricht in den Thread legen
         logging.info(f"OpenAI Request [Session {session_id}]: {prompt}")
-        self.client.beta.threads.messages.create(
+        await self.client.beta.threads.messages.create(
             thread_id=thread_id,
             role="user",
             content=prompt,
@@ -55,7 +55,7 @@ class AIAssistant:
         )
 
         # Run starten
-        run = self.client.beta.threads.runs.create(
+        run = await self.client.beta.threads.runs.create(
             thread_id=thread_id,
             assistant_id=self.assistant_id,
             metadata={"session_id": session_id, "app": "SecureGateway"},
@@ -63,13 +63,15 @@ class AIAssistant:
 
         # Polling bis abgeschlossen
         while run.status != "completed":
-            time.sleep(1)
-            run = self.client.beta.threads.runs.retrieve(
+            await asyncio.sleep(0.5)  # Optimiertes Polling-Intervall
+            run = await self.client.beta.threads.runs.retrieve(
                 thread_id=thread_id, run_id=run.id
             )
 
         # Letzte Nachricht abrufen
-        messages = self.client.beta.threads.messages.list(thread_id=thread_id, limit=1)
+        messages = await self.client.beta.threads.messages.list(
+            thread_id=thread_id, limit=1
+        )
         if not messages.data:
             return "", True
 
@@ -87,7 +89,7 @@ class AIAssistant:
 
         return content, False
 
-    def get_thread_history(self, session_id: str) -> List[str]:
+    async def get_thread_history(self, session_id: str) -> List[str]:
         """Ruft den gesamten Chat-Verlauf aus dem OpenAI Thread ab."""
         thread_id = self._threads.get(session_id)
         if not thread_id:
@@ -95,7 +97,7 @@ class AIAssistant:
 
         try:
             # Hole alle Nachrichten im Thread (default sort ist desc, also neuste zuerst)
-            messages = self.client.beta.threads.messages.list(
+            messages = await self.client.beta.threads.messages.list(
                 thread_id=thread_id,
                 order="asc",  # Wir wollen chronologische Reihenfolge
                 limit=100
@@ -112,4 +114,3 @@ class AIAssistant:
         except Exception as e:
             logging.error(f"Failed to fetch thread history for session {session_id}: {e}")
             return []
-

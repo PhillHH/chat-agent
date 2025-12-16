@@ -32,7 +32,7 @@ async def handle_message(message: UserMessage, request: Request) -> BotResponse:
 
     # 2. PII Filterung (Anonymisierung: DSGVO-Schritt)
     try:
-        anonymized_prompt = scanner.clean(message.message)
+        anonymized_prompt = await scanner.clean(message.message)
     except Exception as exc:  # pragma: no cover - defensive path
         # Fehler im Filter -> 500
         raise HTTPException(
@@ -41,12 +41,12 @@ async def handle_message(message: UserMessage, request: Request) -> BotResponse:
         ) from exc
 
     # 3. AI Call (Assistant auf anonymisierten Prompt)
-    ai_response, escalation = assistant.ask_assistant(session_id, anonymized_prompt)
+    ai_response, escalation = await assistant.ask_assistant(session_id, anonymized_prompt)
 
     # 4. Entscheidung: Restore oder Eskalation
     if escalation:
         # Eskalation: Teams-Notify mit GANZEM Verlauf aus dem Thread
-        full_history = assistant.get_thread_history(session_id)
+        full_history = await assistant.get_thread_history(session_id)
         if not full_history:
              # Fallback, falls History-Fetch fehlschlägt
             full_history = [f"Kundenfrage (anonymisiert): {anonymized_prompt}"]
@@ -67,4 +67,3 @@ async def handle_message(message: UserMessage, request: Request) -> BotResponse:
         response=final_response,
         status="SUCCESS",
     )
-
