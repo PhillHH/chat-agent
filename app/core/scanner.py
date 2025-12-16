@@ -1,5 +1,6 @@
-"""PII-Scanner des Secure AI Gateways: anonymisiert Eingaben (Regex + GLiNER)
-und stellt Originalwerte nach der KI-Antwort wieder her (Re-Personalisierung)."""
+"""PII-Scanner des Secure PolarisDX AI-Chat Gateways: anonymisiert Eingaben
+(Regex + GLiNER) und stellt Originalwerte nach der KI-Antwort wieder her
+(Re-Personalisierung)."""
 import re
 import logging
 from typing import List, Dict, Any

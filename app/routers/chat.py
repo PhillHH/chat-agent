@@ -1,4 +1,4 @@
-"""Chat-Router stellt den Hauptendpunkt des Secure AI Gateways bereit."""
+"""Chat-Router stellt den Hauptendpunkt des Secure PolarisDX AI-Chat Gateways bereit."""
 from fastapi import APIRouter, HTTPException, Request, status
 
 from app.core.models import BotResponse, UserMessage

@@ -1,5 +1,5 @@
 """Steuert die Kommunikation mit der OpenAI Assistant API inkl.
-Eskalationslogik für das Secure AI Gateway."""
+Eskalationslogik für das Secure PolarisDX AI-Chat Gateway."""
 import os
 import time
 import logging

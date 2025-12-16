@@ -1,4 +1,4 @@
-"""FastAPI-Einstiegspunkt für das Secure AI Gateway."""
+"""FastAPI-Einstiegspunkt für das Secure PolarisDX AI-Chat Gateway."""
 import logging
 
 from fastapi import FastAPI
@@ -17,7 +17,7 @@ from fastapi.responses import FileResponse
 
 # Initialisierung der App
 app = FastAPI(
-    title="Secure AI Gateway",
+    title="Secure PolarisDX AI-Chat Gateway",
     version="1.0.0",
     description="Middleware for PII filtering and AI orchestration.",
 )
@@ -60,7 +60,7 @@ def startup_event() -> None:
     # Notifier (hängt von Webhook URL ab)
     app.state.notifier = TeamsNotifier()
 
-    print("🚀 Secure AI Gateway ist initialisiert.")
+    print("🚀 Secure PolarisDX AI-Chat Gateway ist initialisiert.")
 
 
 # Router registrieren

@@ -1,5 +1,5 @@
-"""Kapselt den PII-Vault des Secure AI Gateways und legt sensible Daten
-temporär in Redis ab (TTL: 1h für PII, 24h für Statuswechsel)."""
+"""Kapselt den PII-Vault des Secure PolarisDX AI-Chat Gateways und legt sensible
+Daten temporär in Redis ab (TTL: 1h für PII, 24h für Statuswechsel)."""
 from uuid import uuid4
 
 from app.core.database import redis_client as default_redis_client

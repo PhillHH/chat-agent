@@ -1,5 +1,5 @@
-"""Verbindet das Secure AI Gateway mit Redis und stellt einen synchronen
-Client für PII-Storage und Retrieval bereit."""
+"""Verbindet das Secure PolarisDX AI-Chat Gateway mit Redis und stellt einen
+synchronen Client für PII-Storage und Retrieval bereit."""
 import redis
 
 from app.core.config import settings

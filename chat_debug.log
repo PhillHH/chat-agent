@@ -1,0 +1,244 @@
+2025-12-16 14:39:23,223 [INFO] uvicorn.error: Started server process [8]
+2025-12-16 14:39:23,223 [INFO] uvicorn.error: Waiting for application startup.
+2025-12-16 14:41:30,601 [INFO] gliner.model: Loading the following GLiNER type: <class 'gliner.model.UniEncoderSpanGLiNER'>...
+2025-12-16 14:41:38,312 [INFO] uvicorn.error: Application startup complete.
+2025-12-16 14:44:49,523 [INFO] uvicorn.error: Shutting down
+2025-12-16 14:44:49,628 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-12-16 14:44:49,631 [INFO] uvicorn.error: Application shutdown complete.
+2025-12-16 14:44:49,633 [INFO] uvicorn.error: Finished server process [8]
+2025-12-16 14:45:05,301 [INFO] uvicorn.error: Started server process [75]
+2025-12-16 14:45:05,306 [INFO] uvicorn.error: Waiting for application startup.
+2025-12-16 14:45:05,578 [INFO] gliner.model: Loading the following GLiNER type: <class 'gliner.model.UniEncoderSpanGLiNER'>...
+2025-12-16 14:45:15,188 [INFO] uvicorn.error: Application startup complete.
+2025-12-16 14:45:30,964 [INFO] uvicorn.error: Started server process [91]
+2025-12-16 14:45:30,965 [INFO] uvicorn.error: Waiting for application startup.
+2025-12-16 14:45:31,170 [INFO] gliner.model: Loading the following GLiNER type: <class 'gliner.model.UniEncoderSpanGLiNER'>...
+2025-12-16 14:45:38,076 [INFO] uvicorn.error: Application startup complete.
+2025-12-16 14:45:46,689 [INFO] uvicorn.error: Started server process [107]
+2025-12-16 14:45:46,690 [INFO] uvicorn.error: Waiting for application startup.
+2025-12-16 14:45:46,885 [INFO] gliner.model: Loading the following GLiNER type: <class 'gliner.model.UniEncoderSpanGLiNER'>...
+2025-12-16 14:45:53,823 [INFO] uvicorn.error: Application startup complete.
+2025-12-16 14:47:49,636 [INFO] app.core.scanner: PII Clean: Original='Hallo' -> Anonymized='Hallo'
+2025-12-16 14:47:50,819 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-16 14:47:50,828 [INFO] root: OpenAI Request [Session sess_lv3u0ryfj]: Hallo
+2025-12-16 14:47:51,851 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/messages "HTTP/1.1 200 OK"
+2025-12-16 14:47:53,681 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs "HTTP/1.1 200 OK"
+2025-12-16 14:47:55,035 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_H5eleuwoy9ow1KqzD4zNn7Cu "HTTP/1.1 200 OK"
+2025-12-16 14:47:56,443 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_H5eleuwoy9ow1KqzD4zNn7Cu "HTTP/1.1 200 OK"
+2025-12-16 14:47:57,864 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_H5eleuwoy9ow1KqzD4zNn7Cu "HTTP/1.1 200 OK"
+2025-12-16 14:47:58,082 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 14:47:58,085 [INFO] root: OpenAI Response [Session sess_lv3u0ryfj]: Hallo! Wie kann ich Ihnen helfen, wenn es um Polarisdx.net und deren Produkte geht?
+2025-12-16 14:48:15,653 [INFO] app.core.scanner: PII Clean: Original='Wie stehen die Aktienkurse bei Apple?' -> Anonymized='Wie stehen die Aktienkurse bei <ORGANIZATION_308cd223>?'
+2025-12-16 14:48:15,654 [INFO] root: OpenAI Request [Session sess_lv3u0ryfj]: Wie stehen die Aktienkurse bei <ORGANIZATION_308cd223>?
+2025-12-16 14:48:17,742 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/messages "HTTP/1.1 200 OK"
+2025-12-16 14:48:18,932 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs "HTTP/1.1 200 OK"
+2025-12-16 14:48:20,263 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_Q7Kg55sVTvRi3e8rfnRYGlXJ "HTTP/1.1 200 OK"
+2025-12-16 14:48:21,664 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_Q7Kg55sVTvRi3e8rfnRYGlXJ "HTTP/1.1 200 OK"
+2025-12-16 14:48:23,107 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_Q7Kg55sVTvRi3e8rfnRYGlXJ "HTTP/1.1 200 OK"
+2025-12-16 14:48:24,410 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_Q7Kg55sVTvRi3e8rfnRYGlXJ "HTTP/1.1 200 OK"
+2025-12-16 14:48:24,661 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 14:48:24,664 [INFO] root: OpenAI Response [Session sess_lv3u0ryfj]: Entschuldigung, ich habe keine Informationen über Aktienkurse oder spezifische finanzielle Daten von Organisationen wie Polarisdx.net. Wie kann ich Ihnen sonst behilflich sein bezüglich deren Produkten oder Dienstleistungen?
+2025-12-16 14:48:41,433 [INFO] app.core.scanner: PII Clean: Original='Was verkauft Polarisdx?' -> Anonymized='Was verkauft <ORGANIZATION_c0fcf3c9>?'
+2025-12-16 14:48:41,434 [INFO] root: OpenAI Request [Session sess_lv3u0ryfj]: Was verkauft <ORGANIZATION_c0fcf3c9>?
+2025-12-16 14:48:42,029 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/messages "HTTP/1.1 200 OK"
+2025-12-16 14:48:44,003 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs "HTTP/1.1 200 OK"
+2025-12-16 14:48:45,364 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_x5ctjzW2VSj0kTa2eR2fD1Uq "HTTP/1.1 200 OK"
+2025-12-16 14:48:46,754 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_x5ctjzW2VSj0kTa2eR2fD1Uq "HTTP/1.1 200 OK"
+2025-12-16 14:48:48,063 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_x5ctjzW2VSj0kTa2eR2fD1Uq "HTTP/1.1 200 OK"
+2025-12-16 14:48:49,384 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/runs/run_x5ctjzW2VSj0kTa2eR2fD1Uq "HTTP/1.1 200 OK"
+2025-12-16 14:48:49,617 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_xezeiEBLvSM0eNSWICc1OtVF/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 14:48:49,619 [INFO] root: OpenAI Response [Session sess_lv3u0ryfj]: Leider habe ich keine spezifischen Informationen über Produkte oder Dienstleistungen von Polarisdx.net. Wenn Sie mir mehr Details geben, könnte ich Ihnen möglicherweise besser helfen. Wie kann ich Ihnen sonst weiterhelfen?
+2025-12-16 15:57:33,565 [INFO] app.core.scanner: PII Clean: Original='Haben sie Vitamin D Tests' -> Anonymized='Haben sie Vitamin D Tests'
+2025-12-16 15:57:38,844 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-16 15:57:38,860 [INFO] root: OpenAI Request [Session sess_zud2mdff6]: Haben sie Vitamin D Tests
+2025-12-16 15:57:40,419 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/messages "HTTP/1.1 200 OK"
+2025-12-16 15:57:43,119 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs "HTTP/1.1 200 OK"
+2025-12-16 15:57:44,470 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs/run_4quUHYUMfrXBfwvK1Ln6outn "HTTP/1.1 200 OK"
+2025-12-16 15:57:45,901 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs/run_4quUHYUMfrXBfwvK1Ln6outn "HTTP/1.1 200 OK"
+2025-12-16 15:57:47,261 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs/run_4quUHYUMfrXBfwvK1Ln6outn "HTTP/1.1 200 OK"
+2025-12-16 15:57:48,868 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs/run_4quUHYUMfrXBfwvK1Ln6outn "HTTP/1.1 200 OK"
+2025-12-16 15:57:50,242 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs/run_4quUHYUMfrXBfwvK1Ln6outn "HTTP/1.1 200 OK"
+2025-12-16 15:57:50,520 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 15:57:50,524 [INFO] root: OpenAI Response [Session sess_zud2mdff6]: Es gibt derzeit keine spezifischen Informationen darüber, ob Polarisdx.net Vitamin D-Tests anbietet, da keine entsprechenden Dokumente vorliegen oder hochgeladen wurden. Für genauere Informationen oder um ihr Produktangebot zu überprüfen, würde ich empfehlen, direkt auf ihrer Website nachzuschauen oder deren Kundenservice zu kontaktieren.
+2025-12-16 15:58:23,424 [INFO] app.core.scanner: PII Clean: Original='Was kann man mit dem Igloo machen?' -> Anonymized='Was kann man mit dem Igloo machen?'
+2025-12-16 15:58:23,425 [INFO] root: OpenAI Request [Session sess_zud2mdff6]: Was kann man mit dem Igloo machen?
+2025-12-16 15:58:23,803 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/messages "HTTP/1.1 200 OK"
+2025-12-16 15:58:25,803 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs "HTTP/1.1 200 OK"
+2025-12-16 15:58:27,275 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs/run_k6kS5BylKUGXuaYJGhLkk0gK "HTTP/1.1 200 OK"
+2025-12-16 15:58:28,589 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs/run_k6kS5BylKUGXuaYJGhLkk0gK "HTTP/1.1 200 OK"
+2025-12-16 15:58:29,951 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs/run_k6kS5BylKUGXuaYJGhLkk0gK "HTTP/1.1 200 OK"
+2025-12-16 15:58:31,320 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs/run_k6kS5BylKUGXuaYJGhLkk0gK "HTTP/1.1 200 OK"
+2025-12-16 15:58:32,711 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/runs/run_k6kS5BylKUGXuaYJGhLkk0gK "HTTP/1.1 200 OK"
+2025-12-16 15:58:32,936 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_4YMIbHvKSwh3knVtia50Z5i1/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 15:58:32,937 [INFO] root: OpenAI Response [Session sess_zud2mdff6]: Ich habe derzeit keine spezifischen Informationen über die Verwendung des Produktes "Igloo" von Polarisdx.net, da keine Dokumente verfügbar sind. Um detaillierte Informationen über das Igloo-Produkt zu erhalten, empfehle ich, die Website von Polarisdx.net zu besuchen oder sich direkt an ihren Kundenservice zu wenden. Dort erhalten Sie umfassende Informationen über das Produkt und dessen Einsatzmöglichkeiten.
+2025-12-16 16:00:25,824 [INFO] app.core.scanner: PII Clean: Original='Haben sie Vitamin D Tests?' -> Anonymized='Haben sie Vitamin D Tests?'
+2025-12-16 16:00:26,262 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-16 16:00:26,264 [INFO] root: OpenAI Request [Session sess_ed9tudcn4]: Haben sie Vitamin D Tests?
+2025-12-16 16:00:26,741 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/messages "HTTP/1.1 200 OK"
+2025-12-16 16:00:28,255 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/runs "HTTP/1.1 200 OK"
+2025-12-16 16:00:29,647 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/runs/run_wp2sUzuQ3Uhd4z04UMPgf84W "HTTP/1.1 200 OK"
+2025-12-16 16:00:31,011 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/runs/run_wp2sUzuQ3Uhd4z04UMPgf84W "HTTP/1.1 200 OK"
+2025-12-16 16:00:32,330 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/runs/run_wp2sUzuQ3Uhd4z04UMPgf84W "HTTP/1.1 200 OK"
+2025-12-16 16:00:33,642 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/runs/run_wp2sUzuQ3Uhd4z04UMPgf84W "HTTP/1.1 200 OK"
+2025-12-16 16:00:34,964 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/runs/run_wp2sUzuQ3Uhd4z04UMPgf84W "HTTP/1.1 200 OK"
+2025-12-16 16:00:36,279 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/runs/run_wp2sUzuQ3Uhd4z04UMPgf84W "HTTP/1.1 200 OK"
+2025-12-16 16:00:37,630 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/runs/run_wp2sUzuQ3Uhd4z04UMPgf84W "HTTP/1.1 200 OK"
+2025-12-16 16:00:38,963 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/runs/run_wp2sUzuQ3Uhd4z04UMPgf84W "HTTP/1.1 200 OK"
+2025-12-16 16:00:39,209 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_7q0zudO3q2gE0vEZQf2KQSd1/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:00:39,217 [INFO] root: OpenAI Response [Session sess_ed9tudcn4]: Ja, Polarisdx bietet Vitamin D Tests an. Diese sind speziell für Gesundheits-Checks in Apotheken beliebt und messen den Vitamin D (25-OH) Spiegel【4:0†POLARISDX.docx】.
+2025-12-16 16:05:16,349 [INFO] app.core.scanner: PII Clean: Original='Haben dVitamin d3 Test' -> Anonymized='Haben dVitamin d3 Test'
+2025-12-16 16:05:16,750 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-16 16:05:16,752 [INFO] root: OpenAI Request [Session sess_lpdnopc6v]: Haben dVitamin d3 Test
+2025-12-16 16:05:17,131 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_VWwk8HaUn3qCEmQY9Ql0bEEl/messages "HTTP/1.1 200 OK"
+2025-12-16 16:05:18,212 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_VWwk8HaUn3qCEmQY9Ql0bEEl/runs "HTTP/1.1 200 OK"
+2025-12-16 16:05:19,566 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_VWwk8HaUn3qCEmQY9Ql0bEEl/runs/run_doeNATyWaVrpMPm7cUs4UXk8 "HTTP/1.1 200 OK"
+2025-12-16 16:05:20,904 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_VWwk8HaUn3qCEmQY9Ql0bEEl/runs/run_doeNATyWaVrpMPm7cUs4UXk8 "HTTP/1.1 200 OK"
+2025-12-16 16:05:22,249 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_VWwk8HaUn3qCEmQY9Ql0bEEl/runs/run_doeNATyWaVrpMPm7cUs4UXk8 "HTTP/1.1 200 OK"
+2025-12-16 16:05:23,705 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_VWwk8HaUn3qCEmQY9Ql0bEEl/runs/run_doeNATyWaVrpMPm7cUs4UXk8 "HTTP/1.1 200 OK"
+2025-12-16 16:05:25,201 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_VWwk8HaUn3qCEmQY9Ql0bEEl/runs/run_doeNATyWaVrpMPm7cUs4UXk8 "HTTP/1.1 200 OK"
+2025-12-16 16:05:25,427 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_VWwk8HaUn3qCEmQY9Ql0bEEl/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:05:25,429 [INFO] root: OpenAI Response [Session sess_lpdnopc6v]: Ja, Polarisdx bietet tatsächlich einen Test für Vitamin D3 an. Der Vitamin D Test (25-OH) ist Teil ihres Portfolios und wird oft in Apotheken für Gesundheits-Checks verwendet【4:0†POLARISDX.docx】.
+2025-12-16 16:07:23,033 [INFO] app.core.scanner: PII Clean: Original='Wo kann man gut essen in Hamburg' -> Anonymized='Wo kann man gut essen in <CITY_8b63e65e>'
+2025-12-16 16:07:23,439 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-16 16:07:23,441 [INFO] root: OpenAI Request [Session sess_6dtl7p1c7]: Wo kann man gut essen in <CITY_8b63e65e>
+2025-12-16 16:07:23,781 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/messages "HTTP/1.1 200 OK"
+2025-12-16 16:07:24,730 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs "HTTP/1.1 200 OK"
+2025-12-16 16:07:26,043 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:27,456 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:28,769 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:30,155 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:31,467 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:32,780 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:34,094 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:35,399 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:36,743 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:38,039 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:39,489 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:40,959 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:42,323 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:43,790 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:45,106 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:46,421 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:47,771 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:49,068 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:50,413 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:51,716 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:53,059 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:54,446 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:55,846 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:57,261 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:07:58,692 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:00,331 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:01,676 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:02,994 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:04,390 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:05,714 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:07,064 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:09,053 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:10,393 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:11,737 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:13,053 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:14,482 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:15,787 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:17,148 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:18,521 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:20,033 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:21,487 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:22,803 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:24,193 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:25,515 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:26,813 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:28,154 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:29,592 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:30,931 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:32,265 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:33,655 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:34,990 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/runs/run_Ab7uydMORbFd6MByRHLY2Sv5 "HTTP/1.1 200 OK"
+2025-12-16 16:08:35,227 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_sdlNAGolTdYWbST9AnGf88qX/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:08:35,245 [INFO] root: OpenAI Response [Session sess_6dtl7p1c7]: Entschuldigung, ich kann über Polarisdx.net sprechen, aber es scheint, als würden Sie nach einem Thema suchen, das ich nicht unterstützen kann. Gibt es etwas, das ich Ihnen bezüglich Polarisdx.net helfen kann?
+2025-12-16 16:08:51,271 [INFO] app.core.scanner: PII Clean: Original='Wie hoch ist die Apple Aktie' -> Anonymized='Wie hoch ist die <ORGANIZATION_3b6179fb> Aktie'
+2025-12-16 16:08:51,671 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-16 16:08:51,673 [INFO] root: OpenAI Request [Session sess_wl0ng7vb5]: Wie hoch ist die <ORGANIZATION_3b6179fb> Aktie
+2025-12-16 16:08:52,025 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kvS0TGuZjDkfz1HNfst5ZtNB/messages "HTTP/1.1 200 OK"
+2025-12-16 16:08:53,270 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kvS0TGuZjDkfz1HNfst5ZtNB/runs "HTTP/1.1 200 OK"
+2025-12-16 16:08:55,065 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kvS0TGuZjDkfz1HNfst5ZtNB/runs/run_S3wWV52ahrO2qaId06Dj1nWe "HTTP/1.1 200 OK"
+2025-12-16 16:08:56,397 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kvS0TGuZjDkfz1HNfst5ZtNB/runs/run_S3wWV52ahrO2qaId06Dj1nWe "HTTP/1.1 200 OK"
+2025-12-16 16:08:57,725 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kvS0TGuZjDkfz1HNfst5ZtNB/runs/run_S3wWV52ahrO2qaId06Dj1nWe "HTTP/1.1 200 OK"
+2025-12-16 16:08:59,059 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kvS0TGuZjDkfz1HNfst5ZtNB/runs/run_S3wWV52ahrO2qaId06Dj1nWe "HTTP/1.1 200 OK"
+2025-12-16 16:08:59,761 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kvS0TGuZjDkfz1HNfst5ZtNB/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:08:59,763 [INFO] root: OpenAI Response [Session sess_wl0ng7vb5]: Die Informationen in den von Ihnen zur Verfügung gestellten Dokumenten enthalten keine Angaben zur aktuellen Höhe der Polarisdx.net Aktie. Um spezifische Informationen zu Aktienkursen zu erhalten, empfehle ich, Finanzdatenplattformen oder offizielle Börseninformationen zu konsultieren.
+2025-12-16 16:12:34,581 [INFO] app.core.scanner: PII Clean: Original='Gib mir den Apple Aktienkurs' -> Anonymized='Gib mir den <ORGANIZATION_b023e2fd> Aktienkurs'
+2025-12-16 16:12:34,933 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-16 16:12:34,935 [INFO] root: OpenAI Request [Session sess_vcksa9m9x]: Gib mir den <ORGANIZATION_b023e2fd> Aktienkurs
+2025-12-16 16:12:35,272 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages "HTTP/1.1 200 OK"
+2025-12-16 16:12:36,643 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs "HTTP/1.1 200 OK"
+2025-12-16 16:12:38,005 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_VGTrnVe9e739LDUlGStKMtSG "HTTP/1.1 200 OK"
+2025-12-16 16:12:39,401 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_VGTrnVe9e739LDUlGStKMtSG "HTTP/1.1 200 OK"
+2025-12-16 16:12:40,707 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_VGTrnVe9e739LDUlGStKMtSG "HTTP/1.1 200 OK"
+2025-12-16 16:12:40,933 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:12:40,938 [INFO] root: OpenAI Response [Session sess_vcksa9m9x]: Leider kann ich nur Fragen zu Polarisdx.net oder IglooPro beantworten. Zu anderen Unternehmen oder Aktienkursen kann ich keine Auskunft geben.
+2025-12-16 16:12:55,694 [INFO] app.core.scanner: PII Clean: Original='Haben sie einen Vitamin D TEst?' -> Anonymized='Haben sie einen Vitamin D TEst?'
+2025-12-16 16:12:55,694 [INFO] root: OpenAI Request [Session sess_vcksa9m9x]: Haben sie einen Vitamin D TEst?
+2025-12-16 16:12:56,170 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages "HTTP/1.1 200 OK"
+2025-12-16 16:12:57,192 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs "HTTP/1.1 200 OK"
+2025-12-16 16:12:58,703 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_CKg21H42UL6cakw5lIPGYxgM "HTTP/1.1 200 OK"
+2025-12-16 16:13:00,167 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_CKg21H42UL6cakw5lIPGYxgM "HTTP/1.1 200 OK"
+2025-12-16 16:13:00,398 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:13:00,401 [INFO] root: OpenAI Response [Session sess_vcksa9m9x]: Leider kann ich nur Fragen zu Polarisdx.net oder IglooPro beantworten. Zu anderen Produkten oder Dienstleistungen kann ich keine Informationen bieten.
+2025-12-16 16:14:18,383 [INFO] app.core.scanner: PII Clean: Original='Für welche Test eignet sich das Iglo' -> Anonymized='Für welche Test eignet sich das Iglo'
+2025-12-16 16:14:18,384 [INFO] root: OpenAI Request [Session sess_vcksa9m9x]: Für welche Test eignet sich das Iglo
+2025-12-16 16:14:18,774 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages "HTTP/1.1 200 OK"
+2025-12-16 16:14:20,196 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs "HTTP/1.1 200 OK"
+2025-12-16 16:14:21,517 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_4eg7FdCxKq0LUntEn5IDy4vi "HTTP/1.1 200 OK"
+2025-12-16 16:14:22,957 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_4eg7FdCxKq0LUntEn5IDy4vi "HTTP/1.1 200 OK"
+2025-12-16 16:14:24,296 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_4eg7FdCxKq0LUntEn5IDy4vi "HTTP/1.1 200 OK"
+2025-12-16 16:14:25,676 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_4eg7FdCxKq0LUntEn5IDy4vi "HTTP/1.1 200 OK"
+2025-12-16 16:14:25,887 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:14:25,895 [INFO] root: OpenAI Response [Session sess_vcksa9m9x]: Leider kann ich nur Fragen zu Polarisdx.net oder IglooPro beantworten. Zu anderen Themen oder spezifischen Produkten kann ich keine Auskunft geben.
+2025-12-16 16:18:31,219 [INFO] app.core.scanner: PII Clean: Original='Mein Name ist Phillip Rugullis' -> Anonymized='Mein Name ist <PERSON_74d0c09a>'
+2025-12-16 16:18:31,220 [INFO] root: OpenAI Request [Session sess_vcksa9m9x]: Mein Name ist <PERSON_74d0c09a>
+2025-12-16 16:18:31,649 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages "HTTP/1.1 200 OK"
+2025-12-16 16:18:32,987 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs "HTTP/1.1 200 OK"
+2025-12-16 16:18:34,372 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_8EGnHrCj4A5eMnes9tUVlXBC "HTTP/1.1 200 OK"
+2025-12-16 16:18:35,696 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_8EGnHrCj4A5eMnes9tUVlXBC "HTTP/1.1 200 OK"
+2025-12-16 16:18:37,324 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_8EGnHrCj4A5eMnes9tUVlXBC "HTTP/1.1 200 OK"
+2025-12-16 16:18:37,552 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:18:37,555 [INFO] root: OpenAI Response [Session sess_vcksa9m9x]: Danke für Ihre Nachricht. Wie kann ich Ihnen helfen, insbesondere im Zusammenhang mit Polarisdx.net oder IglooPro?
+2025-12-16 16:19:21,436 [INFO] app.core.scanner: PII Clean: Original='mein Emailadresse ist test@test.de' -> Anonymized='mein Emailadresse ist <EMAIL_c7fed950>'
+2025-12-16 16:19:21,436 [INFO] root: OpenAI Request [Session sess_vcksa9m9x]: mein Emailadresse ist <EMAIL_c7fed950>
+2025-12-16 16:19:21,828 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages "HTTP/1.1 200 OK"
+2025-12-16 16:19:22,781 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs "HTTP/1.1 200 OK"
+2025-12-16 16:19:24,110 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_Q8kulQbOaoSG3rEUMeN9Hnoz "HTTP/1.1 200 OK"
+2025-12-16 16:19:25,416 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_Q8kulQbOaoSG3rEUMeN9Hnoz "HTTP/1.1 200 OK"
+2025-12-16 16:19:26,743 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_Q8kulQbOaoSG3rEUMeN9Hnoz "HTTP/1.1 200 OK"
+2025-12-16 16:19:28,110 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_Q8kulQbOaoSG3rEUMeN9Hnoz "HTTP/1.1 200 OK"
+2025-12-16 16:19:29,447 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_Q8kulQbOaoSG3rEUMeN9Hnoz "HTTP/1.1 200 OK"
+2025-12-16 16:19:29,742 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:19:29,744 [INFO] root: OpenAI Response [Session sess_vcksa9m9x]: Vielen Dank für Ihre Nachricht. Wie kann ich Ihnen helfen, insbesondere im Zusammenhang mit Polarisdx.net oder IglooPro? Bitte lassen Sie mich wissen, ob Sie spezifische Informationen oder Unterstützung benötigen.
+2025-12-16 16:19:43,054 [INFO] app.core.scanner: PII Clean: Original='Patientennummer 123654' -> Anonymized='Patientennummer 123654'
+2025-12-16 16:19:43,055 [INFO] root: OpenAI Request [Session sess_vcksa9m9x]: Patientennummer 123654
+2025-12-16 16:19:43,450 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages "HTTP/1.1 200 OK"
+2025-12-16 16:19:44,695 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs "HTTP/1.1 200 OK"
+2025-12-16 16:19:46,014 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_CT1vKxLyhs71aMpR1oA42M8j "HTTP/1.1 200 OK"
+2025-12-16 16:19:47,364 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_CT1vKxLyhs71aMpR1oA42M8j "HTTP/1.1 200 OK"
+2025-12-16 16:19:48,786 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_CT1vKxLyhs71aMpR1oA42M8j "HTTP/1.1 200 OK"
+2025-12-16 16:19:50,085 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_CT1vKxLyhs71aMpR1oA42M8j "HTTP/1.1 200 OK"
+2025-12-16 16:19:50,394 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:19:50,397 [INFO] root: OpenAI Response [Session sess_vcksa9m9x]: Vielen Dank für Ihre Nachricht. Wie kann ich Ihnen helfen, insbesondere im Zusammenhang mit Polarisdx.net oder IglooPro? Bitte lassen Sie mich wissen, ob Sie spezifische Informationen oder Unterstützung benötigen.
+2025-12-16 16:20:28,666 [INFO] app.core.scanner: PII Clean: Original='Ich ahbe die Patiientennummer 262626262' -> Anonymized='Ich ahbe die Patiientennummer <PHONE_f614d479>'
+2025-12-16 16:20:28,666 [INFO] root: OpenAI Request [Session sess_vcksa9m9x]: Ich ahbe die Patiientennummer <PHONE_f614d479>
+2025-12-16 16:20:29,098 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages "HTTP/1.1 200 OK"
+2025-12-16 16:20:30,824 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs "HTTP/1.1 200 OK"
+2025-12-16 16:20:32,196 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_YIeELl1s9rizUIQt5OzekABK "HTTP/1.1 200 OK"
+2025-12-16 16:20:33,531 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_YIeELl1s9rizUIQt5OzekABK "HTTP/1.1 200 OK"
+2025-12-16 16:20:34,929 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_YIeELl1s9rizUIQt5OzekABK "HTTP/1.1 200 OK"
+2025-12-16 16:20:36,273 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_YIeELl1s9rizUIQt5OzekABK "HTTP/1.1 200 OK"
+2025-12-16 16:20:37,728 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_YIeELl1s9rizUIQt5OzekABK "HTTP/1.1 200 OK"
+2025-12-16 16:20:39,055 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_YIeELl1s9rizUIQt5OzekABK "HTTP/1.1 200 OK"
+2025-12-16 16:20:40,384 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/runs/run_YIeELl1s9rizUIQt5OzekABK "HTTP/1.1 200 OK"
+2025-12-16 16:20:40,620 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Zt1rhlceXEMlZyqPRwXrWIuj/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-16 16:20:40,623 [INFO] root: OpenAI Response [Session sess_vcksa9m9x]: Vielen Dank für Ihre Nachricht. Wie kann ich Ihnen in Bezug auf Polarisdx.net oder IglooPro weiterhelfen? Bitte geben Sie mir mehr Kontext oder spezifische Fragen, wenn Sie Informationen zu diesen Diensten oder Produkten benötigen.
+2025-12-16 17:00:56,999 [INFO] uvicorn.error: Shutting down
+2025-12-16 17:00:57,112 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-12-16 17:00:57,148 [INFO] uvicorn.error: Application shutdown complete.
+2025-12-16 17:00:57,155 [INFO] uvicorn.error: Finished server process [107]

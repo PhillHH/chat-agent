@@ -1,4 +1,4 @@
-"""Konfigurationsmodul für das Secure AI Gateway: lädt zentrale
+"""Konfigurationsmodul für das Secure PolarisDX AI-Chat Gateway: lädt zentrale
 Umgebungsvariablen (Redis, OpenAI, Ports) via Pydantic-Settings."""
 from pydantic import Field
 from pydantic_settings import BaseSettings

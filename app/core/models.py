@@ -1,5 +1,5 @@
-"""API-Modelle für das Secure AI Gateway: Eingangsnachrichten und
-re-personalisierte Bot-Antworten."""
+"""API-Modelle für das Secure PolarisDX AI-Chat Gateway: Eingangsnachrichten
+und re-personalisierte Bot-Antworten."""
 from pydantic import BaseModel
 
 
