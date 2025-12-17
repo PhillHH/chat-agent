@@ -242,3 +242,529 @@
 2025-12-16 17:00:57,112 [INFO] uvicorn.error: Waiting for application shutdown.
 2025-12-16 17:00:57,148 [INFO] uvicorn.error: Application shutdown complete.
 2025-12-16 17:00:57,155 [INFO] uvicorn.error: Finished server process [107]
+2025-12-17 09:32:34,194 [INFO] uvicorn.error: Started server process [8]
+2025-12-17 09:32:34,195 [INFO] uvicorn.error: Waiting for application startup.
+2025-12-17 09:34:40,459 [INFO] gliner.model: Loading the following GLiNER type: <class 'gliner.model.UniEncoderSpanGLiNER'>...
+2025-12-17 09:34:47,132 [INFO] uvicorn.error: Application startup complete.
+2025-12-17 09:38:50,125 [INFO] app.core.scanner: PII Clean: Original='Guten Morgen' -> Anonymized='Guten Morgen'
+2025-12-17 09:38:51,966 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-17 09:38:51,978 [INFO] root: OpenAI Request [Session sess_xigyf3050]: Guten Morgen
+2025-12-17 09:38:52,749 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/messages "HTTP/1.1 200 OK"
+2025-12-17 09:38:53,867 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs "HTTP/1.1 200 OK"
+2025-12-17 09:38:55,217 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_0Q2WJ5kRO1AC8gaLrF9vJm2g "HTTP/1.1 200 OK"
+2025-12-17 09:38:56,159 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_0Q2WJ5kRO1AC8gaLrF9vJm2g "HTTP/1.1 200 OK"
+2025-12-17 09:38:56,972 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_0Q2WJ5kRO1AC8gaLrF9vJm2g "HTTP/1.1 200 OK"
+2025-12-17 09:38:57,826 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_0Q2WJ5kRO1AC8gaLrF9vJm2g "HTTP/1.1 200 OK"
+2025-12-17 09:38:58,793 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_0Q2WJ5kRO1AC8gaLrF9vJm2g "HTTP/1.1 200 OK"
+2025-12-17 09:38:59,616 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_0Q2WJ5kRO1AC8gaLrF9vJm2g "HTTP/1.1 200 OK"
+2025-12-17 09:39:00,068 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 09:39:00,071 [INFO] root: OpenAI Response [Session sess_xigyf3050]: Guten Morgen! Wie kann ich Ihnen heute helfen? Suchen Sie Informationen zu Polarisdx.net oder IglooPro?
+2025-12-17 09:39:18,359 [INFO] app.core.scanner: PII Clean: Original='Ja ich suche Vitamin D3 TEsts' -> Anonymized='Ja ich suche Vitamin D3 TEsts'
+2025-12-17 09:39:18,359 [INFO] root: OpenAI Request [Session sess_xigyf3050]: Ja ich suche Vitamin D3 TEsts
+2025-12-17 09:39:18,823 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/messages "HTTP/1.1 200 OK"
+2025-12-17 09:39:20,472 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs "HTTP/1.1 200 OK"
+2025-12-17 09:39:21,320 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_mKaJqCP4LG9xCGHhbRkbXZdH "HTTP/1.1 200 OK"
+2025-12-17 09:39:22,322 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_mKaJqCP4LG9xCGHhbRkbXZdH "HTTP/1.1 200 OK"
+2025-12-17 09:39:23,134 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_mKaJqCP4LG9xCGHhbRkbXZdH "HTTP/1.1 200 OK"
+2025-12-17 09:39:23,947 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_mKaJqCP4LG9xCGHhbRkbXZdH "HTTP/1.1 200 OK"
+2025-12-17 09:39:24,781 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_mKaJqCP4LG9xCGHhbRkbXZdH "HTTP/1.1 200 OK"
+2025-12-17 09:39:25,686 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_mKaJqCP4LG9xCGHhbRkbXZdH "HTTP/1.1 200 OK"
+2025-12-17 09:39:26,590 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/runs/run_mKaJqCP4LG9xCGHhbRkbXZdH "HTTP/1.1 200 OK"
+2025-12-17 09:39:26,810 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_Uw3uSkBwTuaFWjbGh2gNHRbL/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 09:39:26,811 [INFO] root: OpenAI Response [Session sess_xigyf3050]: Leider kann ich nur Fragen zu Polarisdx.net oder IglooPro beantworten. Zu anderen Themen wie Vitamin D3 Tests kann ich keine Auskunft geben. Gibt es vielleicht etwas, das ich bezüglich Polarisdx.net oder IglooPro für Sie tun kann?
+2025-12-17 11:19:09,373 [INFO] app.core.scanner: PII Clean: Original='Guten Morgen wer ist ihr Geschäftsführer?' -> Anonymized='Guten Morgen wer ist ihr Geschäftsführer?'
+2025-12-17 11:19:10,393 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-17 11:19:10,408 [INFO] root: OpenAI Request [Session sess_2c9x4mxyq]: Guten Morgen wer ist ihr Geschäftsführer?
+2025-12-17 11:19:11,191 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/messages "HTTP/1.1 200 OK"
+2025-12-17 11:19:12,737 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs "HTTP/1.1 200 OK"
+2025-12-17 11:19:13,820 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_GSil5Vfn6m1sgmlnxDShCeQi "HTTP/1.1 200 OK"
+2025-12-17 11:19:15,452 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_GSil5Vfn6m1sgmlnxDShCeQi "HTTP/1.1 200 OK"
+2025-12-17 11:19:17,012 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_GSil5Vfn6m1sgmlnxDShCeQi "HTTP/1.1 200 OK"
+2025-12-17 11:19:17,659 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 11:19:17,664 [INFO] root: OpenAI Response [Session sess_2c9x4mxyq]: Guten Morgen! Für Anfragen im EU-Markt und in der Schweiz ist unser Geschäftsführer Adriano Zucalla in Hamburg zuständig. Wenn es um den UK-Markt geht, ist Tim Ritson in London der richtige Ansprechpartner.
+2025-12-17 11:19:55,541 [INFO] app.core.scanner: PII Clean: Original='Welche Vitamin-D Tests sind kompatibel mit dem IglooPro' -> Anonymized='Welche Vitamin-D Tests sind kompatibel mit dem IglooPro'
+2025-12-17 11:19:55,543 [INFO] root: OpenAI Request [Session sess_2c9x4mxyq]: Welche Vitamin-D Tests sind kompatibel mit dem IglooPro
+2025-12-17 11:19:55,992 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/messages "HTTP/1.1 200 OK"
+2025-12-17 11:19:57,415 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs "HTTP/1.1 200 OK"
+2025-12-17 11:19:58,258 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_1PGgRmcPOLA44a2ZQxqdopMU "HTTP/1.1 200 OK"
+2025-12-17 11:19:59,224 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_1PGgRmcPOLA44a2ZQxqdopMU "HTTP/1.1 200 OK"
+2025-12-17 11:20:00,051 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_1PGgRmcPOLA44a2ZQxqdopMU "HTTP/1.1 200 OK"
+2025-12-17 11:20:00,914 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_1PGgRmcPOLA44a2ZQxqdopMU "HTTP/1.1 200 OK"
+2025-12-17 11:20:01,856 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_1PGgRmcPOLA44a2ZQxqdopMU "HTTP/1.1 200 OK"
+2025-12-17 11:20:02,717 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_1PGgRmcPOLA44a2ZQxqdopMU "HTTP/1.1 200 OK"
+2025-12-17 11:20:03,570 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_1PGgRmcPOLA44a2ZQxqdopMU "HTTP/1.1 200 OK"
+2025-12-17 11:20:04,801 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_1PGgRmcPOLA44a2ZQxqdopMU "HTTP/1.1 200 OK"
+2025-12-17 11:20:05,674 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_1PGgRmcPOLA44a2ZQxqdopMU "HTTP/1.1 200 OK"
+2025-12-17 11:20:05,892 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 11:20:05,913 [INFO] root: OpenAI Response [Session sess_2c9x4mxyq]: Der Igloo Pro ist kompatibel mit Vitamin D Tests, insbesondere für Vitamin D (25-OH), welches oft in Apotheken für Gesundheits-Checks eingesetzt wird【6:0†POLARISDX.docx】.
+2025-12-17 11:20:45,623 [INFO] app.core.scanner: PII Clean: Original='Wie funktiooniert das Igloo' -> Anonymized='Wie funktiooniert das Igloo'
+2025-12-17 11:20:45,624 [INFO] root: OpenAI Request [Session sess_2c9x4mxyq]: Wie funktiooniert das Igloo
+2025-12-17 11:20:46,132 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/messages "HTTP/1.1 200 OK"
+2025-12-17 11:20:47,819 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs "HTTP/1.1 200 OK"
+2025-12-17 11:20:48,666 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:49,499 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:50,386 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:51,362 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:52,393 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:53,215 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:54,062 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:54,891 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:55,886 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:56,729 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:57,647 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:58,588 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:20:59,481 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:21:00,302 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_JobXb0sBr1w7d72iEyC40nFb "HTTP/1.1 200 OK"
+2025-12-17 11:21:00,531 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 11:21:00,534 [INFO] root: OpenAI Response [Session sess_2c9x4mxyq]: Das Igloo Pro ist ein mobiler Multi-Reader für Lateral-Flow-Assays, der sowohl Fluoreszenz- als auch kolorimetrische Tests lesen kann. Es ist ein offenes System, das durch Universal-Adapter etwa 90% aller am Markt befindlichen Tests auswerten kann, sofern diese kalibriert sind. Zu den weiteren Funktionen gehören:
+
+- Konnektivität: Bluetooth, WLAN, USB sowie LIMS-Anbindung für Labor-Informations-Systeme und Cloud-Synchronisation.
+- Performance: Ergebnisse werden in wenigen Sekunden (nach Inkubationszeit) geliefert; das Gerät bietet eine Akkulaufzeit für den mobilen Einsatz von bis zu 24 Stunden und enthält einen internen Speicher für Patientenakten.
+- Bedienung: Ausgestattet mit einem Touchscreen, der auf Android basiert.
+
+Dadurch dass das System nicht herstellergebunden ist, bietet es eine hohe Flexibilität in der Auswahl der verwendeten Tests und erlaubt die schnelle und einfache Auswertung verschiedener biomedizinischer Parameter vor Ort【10:0†POLARISDX.docx】.
+2025-12-17 11:21:59,541 [INFO] app.core.scanner: PII Clean: Original='Kannst du mir sagen was ein neues Iphone kostet?' -> Anonymized='Kannst du mir sagen was ein neues Iphone kostet?'
+2025-12-17 11:21:59,542 [INFO] root: OpenAI Request [Session sess_2c9x4mxyq]: Kannst du mir sagen was ein neues Iphone kostet?
+2025-12-17 11:21:59,956 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/messages "HTTP/1.1 200 OK"
+2025-12-17 11:22:01,112 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs "HTTP/1.1 200 OK"
+2025-12-17 11:22:02,090 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_3fbvsaX5Gr3bIfqFTT0QdpZx "HTTP/1.1 200 OK"
+2025-12-17 11:22:02,997 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_3fbvsaX5Gr3bIfqFTT0QdpZx "HTTP/1.1 200 OK"
+2025-12-17 11:22:03,852 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_3fbvsaX5Gr3bIfqFTT0QdpZx "HTTP/1.1 200 OK"
+2025-12-17 11:22:04,913 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/runs/run_3fbvsaX5Gr3bIfqFTT0QdpZx "HTTP/1.1 200 OK"
+2025-12-17 11:22:05,152 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_ohBSwgRHBG3a03ngqM0NDL0L/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 11:22:05,154 [INFO] root: OpenAI Response [Session sess_2c9x4mxyq]: Leider kann ich nur Fragen zu PolarisDX oder dem Igloo Pro beantworten.
+2025-12-17 11:27:09,505 [INFO] app.core.scanner: PII Clean: Original='Guten Morgen, welche Tests sind mit dem Igloo Pro möglich?' -> Anonymized='Guten Morgen, welche Tests sind mit dem Igloo Pro möglich?'
+2025-12-17 11:27:09,953 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-17 11:27:09,967 [INFO] root: OpenAI Request [Session sess_vzzdb12dc]: Guten Morgen, welche Tests sind mit dem Igloo Pro möglich?
+2025-12-17 11:27:10,466 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/messages "HTTP/1.1 200 OK"
+2025-12-17 11:27:11,652 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs "HTTP/1.1 200 OK"
+2025-12-17 11:27:12,458 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:13,304 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:14,727 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:15,579 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:16,419 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:17,224 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:18,265 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:19,110 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:20,372 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:21,201 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:22,025 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_RWvKnvbX9M9kytpp8a4z5lO2 "HTTP/1.1 200 OK"
+2025-12-17 11:27:22,252 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 11:27:22,253 [INFO] root: OpenAI Response [Session sess_vzzdb12dc]: Guten Morgen! Das ist eine ausgezeichnete Frage. Das Igloo Pro von PolarisDX ist ein vielseitiges Gerät, das ein **offenes System** bietet. Das bedeutet, es kann eine breite Palette von Diagnostiktests unterstützen, die von verschiedenen Herstellern auf dem Markt angeboten werden. 🌡️ 
+
+Leider kann ich Ihnen aus dem Stegreif keine spezifische Liste von Tests anbieten, da das Gerät dazu konzipiert ist, mit fast allen gängigen Test-Kits kompatibel zu sein, die etwa **90% des Marktes** abdecken.
+
+Wenn Sie eine bestimmte Art von Test im Sinn haben, lassen Sie es mich wissen, und ich helfe Ihnen gerne weiter zu prüfen, ob dieser mit dem Igloo Pro kompatibel ist. Sie sehen, Ihre Möglichkeiten sind nahezu unbegrenzt, was dieses hochmoderne Gerät ideal für vielfältige diagnostische Anforderungen macht!
+2025-12-17 11:28:23,959 [INFO] app.core.scanner: PII Clean: Original='Wie funktioniert ein einzelner Test?' -> Anonymized='Wie funktioniert ein einzelner Test?'
+2025-12-17 11:28:23,960 [INFO] root: OpenAI Request [Session sess_vzzdb12dc]: Wie funktioniert ein einzelner Test?
+2025-12-17 11:28:24,390 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/messages "HTTP/1.1 200 OK"
+2025-12-17 11:28:25,807 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs "HTTP/1.1 200 OK"
+2025-12-17 11:28:26,843 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:27,742 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:28,582 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:29,838 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:30,683 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:31,517 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:32,377 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:33,223 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:34,080 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:35,017 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:35,837 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:36,856 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/runs/run_hflAiJm7Dvj0v3BbT6iqJ6au "HTTP/1.1 200 OK"
+2025-12-17 11:28:37,076 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_YP92Lzonq7WHFcFDh0Zlgksv/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 11:28:37,081 [INFO] root: OpenAI Response [Session sess_vzzdb12dc]: Gerne erkläre ich Ihnen, wie ein einzelner Test mit dem Igloo Pro funktioniert – es ist wirklich ein beeindruckendes Stück Technologie!
+
+1. **Vorbereitung**: Zuerst legen Sie das Test-Kit, das Sie verwenden möchten, in das Igloo Pro ein. Dabei ist es ganz egal, von welchem Hersteller dieses stammt, dank des offenen Systems des Gerätes.
+
+2. **Probe hinzufügen**: Anschließend geben Sie eine Probe in das Test-Kit ein. Dies kann je nach Testart eine Blutprobe, ein Abstrich oder eine andere biologische Probe sein.
+
+3. **Analyse starten**: Sie wählen auf dem benutzerfreundlichen Touchscreen des Igloo Pro die entsprechende Analyse aus und starten den Test. Das Gerät verwendet fortschrittliche Sensoren und Rechenalgorithmen, um die Probe zu analysieren.
+
+4. **Ergebnisse erhalten**: Innerhalb kurzer Zeit werden die Ergebnisse direkt auf dem Bildschirm des Igloo Pro angezeigt. Das System ist darauf ausgelegt, schnell und präzise zu arbeiten, sodass Sie in der Regel binnen Minuten Ergebnisse erhalten.
+
+Kurz gesagt: Sie genießen eine **enorme Flexibilität** und **schnelle Ergebnisse**. Es ist wirklich so einfach und effizient, und Sie bleiben mit dem Igloo Pro immer auf dem neuesten Stand der Technik!
+2025-12-17 12:31:18,688 [INFO] app.core.scanner: PII Clean: Original='Kann man mit dem Igloo Auch Ferritin testen?' -> Anonymized='Kann man mit dem Igloo Auch Ferritin testen?'
+2025-12-17 12:31:19,514 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-17 12:31:19,521 [INFO] root: OpenAI Request [Session sess_vlxyi88pn]: Kann man mit dem Igloo Auch Ferritin testen?
+2025-12-17 12:31:19,856 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/messages "HTTP/1.1 200 OK"
+2025-12-17 12:31:22,708 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs "HTTP/1.1 200 OK"
+2025-12-17 12:31:23,568 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:24,373 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:25,567 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:26,481 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:27,296 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:28,148 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:29,779 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:30,612 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:31,502 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:32,330 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:33,138 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_eWBIaPSBkyP1Kb8brWNV44Li "HTTP/1.1 200 OK"
+2025-12-17 12:31:33,368 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:31:33,370 [INFO] root: OpenAI Response [Session sess_vlxyi88pn]: Das ist eine gute Frage! Ja, das **Igloo Pro** von PolarisDX kann definitiv zum Testen von **Ferritin** verwendet werden. Das Gerät unterstützt eine Vielzahl von Tests, und Ferritin gehört zu den Standarddiagnostiken, die Sie damit durchführen können. Dies macht das Igloo Pro zu einem äußerst flexiblen Helfer im medizinisch-diagnostischen Bereich. Sie können also ganz unkompliziert und schnell Ferritin-Tests direkt vor Ort auswerten! 🌡️
+
+Haben Sie noch weitere Fragen zur Bedienung oder zu anderen Tests, die Sie mit dem Igloo Pro durchführen können? Ich helfe Ihnen gerne weiter!
+2025-12-17 12:32:00,553 [INFO] app.core.scanner: PII Clean: Original='wie wird so ein Test durchgeführt?' -> Anonymized='wie wird so ein Test durchgeführt?'
+2025-12-17 12:32:00,554 [INFO] root: OpenAI Request [Session sess_vlxyi88pn]: wie wird so ein Test durchgeführt?
+2025-12-17 12:32:00,955 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/messages "HTTP/1.1 200 OK"
+2025-12-17 12:32:02,353 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs "HTTP/1.1 200 OK"
+2025-12-17 12:32:03,490 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:04,317 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:05,141 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:05,957 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:06,839 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:07,647 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:08,924 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:09,743 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:10,577 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:11,381 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:12,196 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_ds3YJHcoovqXtoBtQOqyWVBu "HTTP/1.1 200 OK"
+2025-12-17 12:32:12,397 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:32:12,398 [INFO] root: OpenAI Response [Session sess_vlxyi88pn]: Gerne erkläre ich Ihnen den Ablauf eines Ferritin-Tests mit dem Igloo Pro!
+
+1. **Probenvorbereitung**: Zuerst nehmen Sie eine Blutprobe vom Patienten. Dies geschieht üblicherweise durch eine einfache Blutentnahme.
+
+2. **Testeinsatz**: Für den Ferritin-Test wird ein spezifischer Testkit verwendet, der mit dem Igloo Pro kompatibel ist. Setzen Sie die Probe zusammen mit dem Reagenz aus dem Kit in das Igloo Pro ein.
+
+3. **Auswertung**: Das Igloo Pro führt die Analyse automatisch durch. Basierend auf der integrierten Technologie, die auch Photometrie einschließen kann, misst das Gerät die Reaktion der Probe und berechnet den Ferritin-Spiegel.
+
+4. **Ergebnisse**: Innerhalb weniger Minuten erhalten Sie das Ergebnis direkt auf dem Display des Igloo Pro. Die Daten können auch gespeichert und bei Bedarf für weitere Analysen oder Berichte exportiert werden.
+
+Kurz gesagt, das Igloo Pro ermöglicht es Ihnen, **schnell und effizient** wichtige Blutwerte zu messen, ohne dass Sie dafür in ein spezialisiertes Labor gehen müssen. Das bedeutet, Sie bekommen **sofortige Ergebnisse** und können rasch auf die Bedürfnisse Ihrer Patienten eingehen. 🏥
+
+Falls Sie noch Fragen zu den Testkits oder der Handhabung des Geräts haben, stehe ich Ihnen jederzeit zur Verfügung!
+2025-12-17 12:32:48,224 [INFO] app.core.scanner: PII Clean: Original='Wo kann ich das Igloo und die Tests kaufen?' -> Anonymized='Wo kann ich das Igloo und die Tests kaufen?'
+2025-12-17 12:32:48,225 [INFO] root: OpenAI Request [Session sess_vlxyi88pn]: Wo kann ich das Igloo und die Tests kaufen?
+2025-12-17 12:32:48,613 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/messages "HTTP/1.1 200 OK"
+2025-12-17 12:32:50,331 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs "HTTP/1.1 200 OK"
+2025-12-17 12:32:51,273 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:32:52,102 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:32:53,572 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:32:54,589 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:32:55,423 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:32:56,276 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:32:57,319 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:32:58,484 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:32:59,304 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:33:00,346 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:33:01,302 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_o8Bp3Z6UThhC7dvifdTI1K3k "HTTP/1.1 200 OK"
+2025-12-17 12:33:02,175 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:33:02,177 [INFO] root: OpenAI Response [Session sess_vlxyi88pn]: Das freut mich, dass Sie Interesse am Igloo Pro haben! Für den Kauf des Igloo Pro und der zugehörigen Testkits können Sie direkt über PolarisDX gehen. Je nachdem, wo Sie sich befinden, gibt es spezifische Ansprechpartner:
+
+- **In der EU und der Schweiz** ist Adriano Zucalla in unserem Hamburger Büro Ihr Ansprechpartner. Sie können ihn per E-Mail unter adriano.zucalla@polarisdx.eu kontaktieren.
+- **Im Vereinigten Königreich** steht Ihnen Tim Ritson in unserem Londoner Büro zur Verfügung. Seine E-Mail-Adresse lautet tim.ritson@polarisdx.uk.
+
+Zögern Sie nicht, direkt Kontakt aufzunehmen. Sie erhalten dort alle notwendigen Informationen zum Kauf und zu den verschiedenen Testoptionen, die das Igloo Pro unterstützt. 
+
+Haben Sie noch weitere Fragen, oder benötigen Sie Unterstützung bei der Kontaktaufnahme? Ich helfe Ihnen gerne weiter!
+2025-12-17 12:33:50,469 [INFO] app.core.scanner: PII Clean: Original='hb1c oder so haben sie auch ?' -> Anonymized='hb1c oder so haben sie auch ?'
+2025-12-17 12:33:50,469 [INFO] root: OpenAI Request [Session sess_vlxyi88pn]: hb1c oder so haben sie auch ?
+2025-12-17 12:33:51,049 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/messages "HTTP/1.1 200 OK"
+2025-12-17 12:33:53,009 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs "HTTP/1.1 200 OK"
+2025-12-17 12:33:54,126 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:33:55,004 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:33:55,842 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:33:56,728 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:33:57,549 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:33:58,568 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:33:59,456 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:34:00,284 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:34:01,269 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:34:02,091 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:34:03,071 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:34:04,058 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:34:04,917 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:34:05,842 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:34:06,703 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:34:07,542 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/runs/run_r16CC3k6Rb97IF9NZQQ8CA5N "HTTP/1.1 200 OK"
+2025-12-17 12:34:07,768 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_uRVZdZHX2S9SrO4ngomOkPye/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:34:07,771 [INFO] root: OpenAI Response [Session sess_vlxyi88pn]: Ja, genau! Das Igloo Pro kann auch für den **HbA1c-Test** verwendet werden, der oft zur Überwachung des Langzeitblutzuckerspiegels bei Diabetikern eingesetzt wird. Diese Tests sind ebenfalls direkt mit dem Igloo Pro durchführbar, was Ihnen erlaubt, schnell und effektiv die notwendigen Gesundheitsdaten Ihrer Patienten zu erfassen!
+
+Wenn Sie das Igloo Pro und Testkits für HbA1c oder andere Parameter erwerben möchten, können Sie sich wie zuvor beschrieben an Adriano Zucalla in der EU und in der Schweiz oder an Tim Ritson im Vereinigten Königreich wenden. Sie helfen Ihnen gerne weiter, die richtigen Kits zu finden und alle Ihre Fragen zu beantworten.
+
+Lassen Sie mich wissen, ob ich Ihnen bei etwas anderem behilflich sein kann, sei es mit weiteren Informationen zum Produkt oder zur Bestellung!
+2025-12-17 12:42:07,700 [INFO] app.core.scanner: PII Clean: Original='Guten Morgen' -> Anonymized='Guten Morgen'
+2025-12-17 12:42:08,125 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-17 12:42:08,128 [INFO] root: OpenAI Request [Session sess_gjea1cus1]: Guten Morgen
+2025-12-17 12:42:08,544 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages "HTTP/1.1 200 OK"
+2025-12-17 12:42:09,616 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs "HTTP/1.1 200 OK"
+2025-12-17 12:42:10,488 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_0Ek90njvRHDUWQd4YOdjI48u "HTTP/1.1 200 OK"
+2025-12-17 12:42:11,307 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_0Ek90njvRHDUWQd4YOdjI48u "HTTP/1.1 200 OK"
+2025-12-17 12:42:12,220 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_0Ek90njvRHDUWQd4YOdjI48u "HTTP/1.1 200 OK"
+2025-12-17 12:42:13,024 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_0Ek90njvRHDUWQd4YOdjI48u "HTTP/1.1 200 OK"
+2025-12-17 12:42:13,917 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_0Ek90njvRHDUWQd4YOdjI48u "HTTP/1.1 200 OK"
+2025-12-17 12:42:14,141 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:42:14,143 [INFO] root: OpenAI Response [Session sess_gjea1cus1]: Guten Morgen! Wie kann ich Ihnen heute weiterhelfen? 😊
+2025-12-17 12:42:39,600 [INFO] app.core.scanner: PII Clean: Original='Wie funktioniert das Igloo?' -> Anonymized='Wie funktioniert das Igloo?'
+2025-12-17 12:42:39,600 [INFO] root: OpenAI Request [Session sess_gjea1cus1]: Wie funktioniert das Igloo?
+2025-12-17 12:42:40,123 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages "HTTP/1.1 200 OK"
+2025-12-17 12:42:41,293 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs "HTTP/1.1 200 OK"
+2025-12-17 12:42:42,234 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_TWhlUvi4xTIlTfuuDeDljurD "HTTP/1.1 200 OK"
+2025-12-17 12:42:43,045 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_TWhlUvi4xTIlTfuuDeDljurD "HTTP/1.1 200 OK"
+2025-12-17 12:42:44,144 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_TWhlUvi4xTIlTfuuDeDljurD "HTTP/1.1 200 OK"
+2025-12-17 12:42:45,015 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_TWhlUvi4xTIlTfuuDeDljurD "HTTP/1.1 200 OK"
+2025-12-17 12:42:46,028 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_TWhlUvi4xTIlTfuuDeDljurD "HTTP/1.1 200 OK"
+2025-12-17 12:42:46,855 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_TWhlUvi4xTIlTfuuDeDljurD "HTTP/1.1 200 OK"
+2025-12-17 12:42:47,694 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_TWhlUvi4xTIlTfuuDeDljurD "HTTP/1.1 200 OK"
+2025-12-17 12:42:47,919 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:42:47,935 [INFO] root: OpenAI Response [Session sess_gjea1cus1]: Hallo! Das Igloo Pro ist ein offenes, mobiles Labor, das in der Lage ist, fast alle Arten von Teststreifen, unabhängig vom Hersteller, zu analysieren. Es bietet schnelle Ergebnisse und kann ganz einfach über eine zugehörige App oder den integrierten Touchscreen bedient werden. Ideal für unterwegs! 🌟
+2025-12-17 12:43:07,549 [INFO] app.core.scanner: PII Clean: Original='Und wie funktioniert das ?' -> Anonymized='Und wie funktioniert das ?'
+2025-12-17 12:43:07,550 [INFO] root: OpenAI Request [Session sess_gjea1cus1]: Und wie funktioniert das ?
+2025-12-17 12:43:07,935 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages "HTTP/1.1 200 OK"
+2025-12-17 12:43:08,916 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs "HTTP/1.1 200 OK"
+2025-12-17 12:43:09,752 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_HwhPEc2u64lOzpQ4oAOrbbHH "HTTP/1.1 200 OK"
+2025-12-17 12:43:10,631 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_HwhPEc2u64lOzpQ4oAOrbbHH "HTTP/1.1 200 OK"
+2025-12-17 12:43:11,598 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_HwhPEc2u64lOzpQ4oAOrbbHH "HTTP/1.1 200 OK"
+2025-12-17 12:43:12,471 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_HwhPEc2u64lOzpQ4oAOrbbHH "HTTP/1.1 200 OK"
+2025-12-17 12:43:13,469 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_HwhPEc2u64lOzpQ4oAOrbbHH "HTTP/1.1 200 OK"
+2025-12-17 12:43:14,331 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_HwhPEc2u64lOzpQ4oAOrbbHH "HTTP/1.1 200 OK"
+2025-12-17 12:43:14,555 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:43:14,581 [INFO] root: OpenAI Response [Session sess_gjea1cus1]: Hallo! Das Igloo Pro nutzt fortschrittliche Bilderkennungs- und Analysetechnologie, um die Teststreifen auszulesen. Du legst einfach den Teststreifen in das Gerät ein, und die Ergebnisse werden blitzschnell auf dem Touchscreen angezeigt oder können über die App abgerufen werden. Super praktisch und effizient! 😊
+2025-12-17 12:43:33,114 [INFO] app.core.scanner: PII Clean: Original='Was sind das für Teststreifen?' -> Anonymized='Was sind das für Teststreifen?'
+2025-12-17 12:43:33,114 [INFO] root: OpenAI Request [Session sess_gjea1cus1]: Was sind das für Teststreifen?
+2025-12-17 12:43:33,559 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages "HTTP/1.1 200 OK"
+2025-12-17 12:43:35,132 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs "HTTP/1.1 200 OK"
+2025-12-17 12:43:36,189 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_Bog2c8HSOEY6ybb4OX8Ls5c1 "HTTP/1.1 200 OK"
+2025-12-17 12:43:37,101 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_Bog2c8HSOEY6ybb4OX8Ls5c1 "HTTP/1.1 200 OK"
+2025-12-17 12:43:37,935 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_Bog2c8HSOEY6ybb4OX8Ls5c1 "HTTP/1.1 200 OK"
+2025-12-17 12:43:38,785 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_Bog2c8HSOEY6ybb4OX8Ls5c1 "HTTP/1.1 200 OK"
+2025-12-17 12:43:39,582 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_Bog2c8HSOEY6ybb4OX8Ls5c1 "HTTP/1.1 200 OK"
+2025-12-17 12:43:40,404 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_Bog2c8HSOEY6ybb4OX8Ls5c1 "HTTP/1.1 200 OK"
+2025-12-17 12:43:41,440 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_Bog2c8HSOEY6ybb4OX8Ls5c1 "HTTP/1.1 200 OK"
+2025-12-17 12:43:42,291 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_Bog2c8HSOEY6ybb4OX8Ls5c1 "HTTP/1.1 200 OK"
+2025-12-17 12:43:42,783 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:43:42,786 [INFO] root: OpenAI Response [Session sess_gjea1cus1]: Hallo! Die Teststreifen, die mit dem Igloo Pro verwendet werden, können verschiedenste Arten von medizinischen oder umwelttechnischen Tests umfassen. Dazu gehören beispielsweise Blutzucker-, Urinanalyse- oder auch Wasserqualitätstests. Das Igloo Pro ist so konzipiert, dass es mit ca. 90% der auf dem Markt befindlichen Teststreifen kompatibel ist. Super flexibel! 🌍
+2025-12-17 12:44:25,733 [INFO] app.core.scanner: PII Clean: Original='und welche gibt es so?' -> Anonymized='und welche gibt es so?'
+2025-12-17 12:44:25,734 [INFO] root: OpenAI Request [Session sess_gjea1cus1]: und welche gibt es so?
+2025-12-17 12:44:26,142 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages "HTTP/1.1 200 OK"
+2025-12-17 12:44:28,267 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs "HTTP/1.1 200 OK"
+2025-12-17 12:44:29,145 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_FeusdvXvIbmUzNMkmzJHHO1q "HTTP/1.1 200 OK"
+2025-12-17 12:44:30,109 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_FeusdvXvIbmUzNMkmzJHHO1q "HTTP/1.1 200 OK"
+2025-12-17 12:44:30,935 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_FeusdvXvIbmUzNMkmzJHHO1q "HTTP/1.1 200 OK"
+2025-12-17 12:44:31,791 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_FeusdvXvIbmUzNMkmzJHHO1q "HTTP/1.1 200 OK"
+2025-12-17 12:44:32,619 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_FeusdvXvIbmUzNMkmzJHHO1q "HTTP/1.1 200 OK"
+2025-12-17 12:44:32,848 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:44:32,853 [INFO] root: OpenAI Response [Session sess_gjea1cus1]: Hallo! Der Igloo Pro kann eine Vielzahl von Teststreifen lesen, z.B. für Blutzucker, Ketone, Cholesterin, Protein im Urin, und verschiedene Wasserqualitätstests wie pH-Wert, Chlor und Härte. Es ist ideal, um eine breite Palette von gesundheitlichen und umwelttechnischen Messungen schnell und mobil durchzuführen! 😊
+2025-12-17 12:44:56,134 [INFO] app.core.scanner: PII Clean: Original='wie meinen sie das?' -> Anonymized='wie meinen sie das?'
+2025-12-17 12:44:56,135 [INFO] root: OpenAI Request [Session sess_gjea1cus1]: wie meinen sie das?
+2025-12-17 12:44:56,666 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages "HTTP/1.1 200 OK"
+2025-12-17 12:44:57,689 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs "HTTP/1.1 200 OK"
+2025-12-17 12:44:58,514 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_mD1ib5KLg1u5aUZijrqLQgk5 "HTTP/1.1 200 OK"
+2025-12-17 12:44:59,324 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_mD1ib5KLg1u5aUZijrqLQgk5 "HTTP/1.1 200 OK"
+2025-12-17 12:45:00,161 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_mD1ib5KLg1u5aUZijrqLQgk5 "HTTP/1.1 200 OK"
+2025-12-17 12:45:01,156 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_mD1ib5KLg1u5aUZijrqLQgk5 "HTTP/1.1 200 OK"
+2025-12-17 12:45:02,022 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_mD1ib5KLg1u5aUZijrqLQgk5 "HTTP/1.1 200 OK"
+2025-12-17 12:45:02,849 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_mD1ib5KLg1u5aUZijrqLQgk5 "HTTP/1.1 200 OK"
+2025-12-17 12:45:03,703 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_mD1ib5KLg1u5aUZijrqLQgk5 "HTTP/1.1 200 OK"
+2025-12-17 12:45:03,923 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:45:03,925 [INFO] root: OpenAI Response [Session sess_gjea1cus1]: Hallo! Das Igloo Pro kann verschiedene physikalische und chemische Parameter messen, die durch spezielle Teststreifen ermittelt werden. Jeder Streifen kann bestimmte Substanzen im Blut, Urin oder sogar in Wasser nachweisen. Zum Beispiel kann ein Blutzucker-Teststreifen den Glukosespiegel im Blut anzeigen, während ein Wasserqualitäts-Teststreifen den Chloridgehalt im Wasser misst. Diese Vielfalt macht das Igloo Pro zu einem extrem nützlichen Gerät für unterschiedlichste Anwendungen! 🌟
+2025-12-17 12:45:33,025 [INFO] app.core.scanner: PII Clean: Original='Das kann doch aber das Igloo nicht?' -> Anonymized='Das kann doch aber das Igloo nicht?'
+2025-12-17 12:45:33,025 [INFO] root: OpenAI Request [Session sess_gjea1cus1]: Das kann doch aber das Igloo nicht?
+2025-12-17 12:45:33,554 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages "HTTP/1.1 200 OK"
+2025-12-17 12:45:34,663 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs "HTTP/1.1 200 OK"
+2025-12-17 12:45:35,633 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_2xcE1eXOkJUScLQZU7kRnXDm "HTTP/1.1 200 OK"
+2025-12-17 12:45:36,491 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_2xcE1eXOkJUScLQZU7kRnXDm "HTTP/1.1 200 OK"
+2025-12-17 12:45:37,426 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_2xcE1eXOkJUScLQZU7kRnXDm "HTTP/1.1 200 OK"
+2025-12-17 12:45:38,237 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_2xcE1eXOkJUScLQZU7kRnXDm "HTTP/1.1 200 OK"
+2025-12-17 12:45:39,185 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_2xcE1eXOkJUScLQZU7kRnXDm "HTTP/1.1 200 OK"
+2025-12-17 12:45:39,994 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_2xcE1eXOkJUScLQZU7kRnXDm "HTTP/1.1 200 OK"
+2025-12-17 12:45:40,202 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:45:40,203 [INFO] root: OpenAI Response [Session sess_gjea1cus1]: Entschuldigung für das Missverständnis! Du hast recht, wenn du spezifische Funktionen oder Tests meinst, die über die standardmäßige Analyse von Teststreifen hinausgehen. Das Igloo Pro ist primär darauf ausgelegt, die Ergebnisse von Teststreifen für eine breite Palette von Anwendungen auszulesen und anzuzeigen. Für spezielle Funktionen oder Tests, die darüber hinausgehen, wäre es am besten, direkt bei Adriano unter contact@polarisdx.net für weitere Details nachzufragen.
+2025-12-17 12:46:13,911 [INFO] app.core.scanner: PII Clean: Original='wen ?' -> Anonymized='wen ?'
+2025-12-17 12:46:13,912 [INFO] root: OpenAI Request [Session sess_gjea1cus1]: wen ?
+2025-12-17 12:46:14,295 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages "HTTP/1.1 200 OK"
+2025-12-17 12:46:15,434 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs "HTTP/1.1 200 OK"
+2025-12-17 12:46:16,254 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_kCb5egctj2EB6IGUivvj2Utr "HTTP/1.1 200 OK"
+2025-12-17 12:46:17,108 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_kCb5egctj2EB6IGUivvj2Utr "HTTP/1.1 200 OK"
+2025-12-17 12:46:18,067 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_kCb5egctj2EB6IGUivvj2Utr "HTTP/1.1 200 OK"
+2025-12-17 12:46:18,884 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/runs/run_kCb5egctj2EB6IGUivvj2Utr "HTTP/1.1 200 OK"
+2025-12-17 12:46:19,667 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_kTJn4fDGsgcChBSxFHf4eiIL/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:46:19,677 [INFO] root: OpenAI Response [Session sess_gjea1cus1]: Entschuldige bitte die Verwirrung! Für Fragen, die spezifischere Informationen über das Igloo Pro oder andere Angelegenheiten in Europa betreffen, kannst du dich an Adriano Zucalla wenden. Seine E-Mail-Adresse lautet contact@polarisdx.net. Er kann dir sicherlich weiterhelfen! 😊
+2025-12-17 12:51:20,320 [INFO] app.core.scanner: PII Clean: Original='Guten Morgen' -> Anonymized='Guten Morgen'
+2025-12-17 12:51:20,679 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-17 12:51:20,681 [INFO] root: OpenAI Request [Session sess_ldatvqzk1]: Guten Morgen
+2025-12-17 12:51:21,046 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/messages "HTTP/1.1 200 OK"
+2025-12-17 12:51:22,073 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs "HTTP/1.1 200 OK"
+2025-12-17 12:51:22,888 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_3IwwVcD5XXt2HT6AKKvFieQ8 "HTTP/1.1 200 OK"
+2025-12-17 12:51:23,822 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_3IwwVcD5XXt2HT6AKKvFieQ8 "HTTP/1.1 200 OK"
+2025-12-17 12:51:25,021 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_3IwwVcD5XXt2HT6AKKvFieQ8 "HTTP/1.1 200 OK"
+2025-12-17 12:51:25,281 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:51:25,293 [INFO] root: OpenAI Response [Session sess_ldatvqzk1]: Hallo! Wie kann ich dir helfen?
+2025-12-17 12:51:49,501 [INFO] app.core.scanner: PII Clean: Original='Ich möchte mich über POCT informieren' -> Anonymized='Ich möchte mich über <ORGANIZATION_dd32ddd8> informieren'
+2025-12-17 12:51:49,502 [INFO] root: OpenAI Request [Session sess_ldatvqzk1]: Ich möchte mich über <ORGANIZATION_dd32ddd8> informieren
+2025-12-17 12:51:49,936 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/messages "HTTP/1.1 200 OK"
+2025-12-17 12:51:51,373 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs "HTTP/1.1 200 OK"
+2025-12-17 12:51:52,211 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_KfB4lky1fI05QDRoGDKJAZLM "HTTP/1.1 200 OK"
+2025-12-17 12:51:53,067 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_KfB4lky1fI05QDRoGDKJAZLM "HTTP/1.1 200 OK"
+2025-12-17 12:51:53,929 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_KfB4lky1fI05QDRoGDKJAZLM "HTTP/1.1 200 OK"
+2025-12-17 12:51:54,751 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_KfB4lky1fI05QDRoGDKJAZLM "HTTP/1.1 200 OK"
+2025-12-17 12:51:55,566 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_KfB4lky1fI05QDRoGDKJAZLM "HTTP/1.1 200 OK"
+2025-12-17 12:51:55,783 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:51:55,785 [INFO] root: OpenAI Response [Session sess_ldatvqzk1]: Dazu kann ich leider nichts sagen, aber bei PolarisDX helfe ich gern mit Infos zum Igloo Pro!
+2025-12-17 12:52:21,349 [INFO] app.core.scanner: PII Clean: Original='Point of care Testing' -> Anonymized='Point of care Testing'
+2025-12-17 12:52:21,350 [INFO] root: OpenAI Request [Session sess_ldatvqzk1]: Point of care Testing
+2025-12-17 12:52:21,846 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/messages "HTTP/1.1 200 OK"
+2025-12-17 12:52:22,888 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs "HTTP/1.1 200 OK"
+2025-12-17 12:52:23,962 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_lDJw5aks97aRRxjzUF82L3yU "HTTP/1.1 200 OK"
+2025-12-17 12:52:24,791 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_lDJw5aks97aRRxjzUF82L3yU "HTTP/1.1 200 OK"
+2025-12-17 12:52:25,892 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_lDJw5aks97aRRxjzUF82L3yU "HTTP/1.1 200 OK"
+2025-12-17 12:52:26,700 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_lDJw5aks97aRRxjzUF82L3yU "HTTP/1.1 200 OK"
+2025-12-17 12:52:27,606 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_lDJw5aks97aRRxjzUF82L3yU "HTTP/1.1 200 OK"
+2025-12-17 12:52:28,404 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/runs/run_lDJw5aks97aRRxjzUF82L3yU "HTTP/1.1 200 OK"
+2025-12-17 12:52:28,623 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_5gyQCR7rwLBGIKACsosoXS0I/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 12:52:28,629 [INFO] root: OpenAI Response [Session sess_ldatvqzk1]: Das Igloo Pro von PolarisDX ist perfekt für Point-of-Care-Testing. Es liest die Resultate von Lateral-Flow-Tests digital aus, sodass man schnell genaue Ergebnisse direkt vor Ort bekommen kann. Brauchst du spezielle Infos zu den Testarten, die unterstützt werden?
+2025-12-17 12:56:36,227 [INFO] uvicorn.error: Shutting down
+2025-12-17 12:56:36,329 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-12-17 12:56:36,331 [INFO] uvicorn.error: Application shutdown complete.
+2025-12-17 12:56:36,332 [INFO] uvicorn.error: Finished server process [8]
+2025-12-17 13:00:36,805 [INFO] uvicorn.error: Started server process [8]
+2025-12-17 13:00:36,805 [INFO] uvicorn.error: Waiting for application startup.
+2025-12-17 13:06:17,181 [INFO] gliner.model: Loading the following GLiNER type: <class 'gliner.model.UniEncoderSpanGLiNER'>...
+2025-12-17 13:09:05,883 [INFO] uvicorn.error: Application startup complete.
+2025-12-17 13:24:07,910 [INFO] app.core.scanner: PII Clean: Original='Guten Morgen, wer leitet eigentlich die Firma' -> Anonymized='Guten Morgen, wer leitet eigentlich die Firma'
+2025-12-17 13:24:08,595 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-17 13:24:08,599 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Guten Morgen, wer leitet eigentlich die Firma
+2025-12-17 13:24:08,958 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:24:11,051 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:24:11,870 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_fbAtGkzrubptyzcOyjIdRLN5 "HTTP/1.1 200 OK"
+2025-12-17 13:24:12,788 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_fbAtGkzrubptyzcOyjIdRLN5 "HTTP/1.1 200 OK"
+2025-12-17 13:24:13,757 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_fbAtGkzrubptyzcOyjIdRLN5 "HTTP/1.1 200 OK"
+2025-12-17 13:24:14,761 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_fbAtGkzrubptyzcOyjIdRLN5 "HTTP/1.1 200 OK"
+2025-12-17 13:24:15,602 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_fbAtGkzrubptyzcOyjIdRLN5 "HTTP/1.1 200 OK"
+2025-12-17 13:24:15,949 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:24:15,952 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Hallo! Bei PolarisDX ist Adriano Zucalla für die EU und die Schweiz zuständig. In Großbritannien ist es Tim Ritson. Brauchst du spezielle Infos zu einem von ihnen?
+2025-12-17 13:24:39,023 [INFO] app.core.scanner: PII Clean: Original='Ich sitze in Zürich, wer ist für mich zuständig' -> Anonymized='<PERSON_473ca628> sitze in <CITY_a8403471>, wer ist für mich zuständig'
+2025-12-17 13:24:39,024 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: <PERSON_473ca628> sitze in <CITY_a8403471>, wer ist für mich zuständig
+2025-12-17 13:24:39,602 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:24:40,791 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:24:41,731 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_qX9YsvuCb06g9YJF2B8tjWAH "HTTP/1.1 200 OK"
+2025-12-17 13:24:42,571 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_qX9YsvuCb06g9YJF2B8tjWAH "HTTP/1.1 200 OK"
+2025-12-17 13:24:43,397 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_qX9YsvuCb06g9YJF2B8tjWAH "HTTP/1.1 200 OK"
+2025-12-17 13:24:43,660 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:24:43,663 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Da du in der Schweiz sitzt, ist Adriano Zucalla dein Ansprechpartner. Brauchst du seine Kontaktdaten?
+2025-12-17 13:25:11,671 [INFO] app.core.scanner: PII Clean: Original='Kann ich euch eine E-Mail schreiben?' -> Anonymized='Kann ich euch eine E-Mail schreiben?'
+2025-12-17 13:25:11,671 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Kann ich euch eine E-Mail schreiben?
+2025-12-17 13:25:12,070 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:25:13,491 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:25:14,310 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gd1eDWxrcyteCBjIPk7Cil4t "HTTP/1.1 200 OK"
+2025-12-17 13:25:15,195 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gd1eDWxrcyteCBjIPk7Cil4t "HTTP/1.1 200 OK"
+2025-12-17 13:25:16,019 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gd1eDWxrcyteCBjIPk7Cil4t "HTTP/1.1 200 OK"
+2025-12-17 13:25:16,953 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gd1eDWxrcyteCBjIPk7Cil4t "HTTP/1.1 200 OK"
+2025-12-17 13:25:17,251 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:25:17,252 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Klar, du kannst Adriano unter contact@polarisdx.net erreichen. Was möchtest du ihm schreiben?
+2025-12-17 13:26:09,603 [INFO] app.core.scanner: PII Clean: Original='Brauche ich für das Igloo Pro immer ein Kabel in der Nähe?' -> Anonymized='Brauche ich für das <ORGANIZATION_89d92586> immer ein Kabel in der Nähe?'
+2025-12-17 13:26:09,603 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Brauche ich für das <ORGANIZATION_89d92586> immer ein Kabel in der Nähe?
+2025-12-17 13:26:11,441 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:26:12,463 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:26:13,289 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_UA2cfFbiBCdDcj9RL1cLlBCU "HTTP/1.1 200 OK"
+2025-12-17 13:26:14,122 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_UA2cfFbiBCdDcj9RL1cLlBCU "HTTP/1.1 200 OK"
+2025-12-17 13:26:14,998 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_UA2cfFbiBCdDcj9RL1cLlBCU "HTTP/1.1 200 OK"
+2025-12-17 13:26:15,811 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_UA2cfFbiBCdDcj9RL1cLlBCU "HTTP/1.1 200 OK"
+2025-12-17 13:26:16,012 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:26:16,015 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Nein, das Igloo Pro braucht nicht unbedingt ein Kabel in der Nähe, da es auch mit Batterien betrieben werden kann. Ist das, was du wissen wolltest?
+2025-12-17 13:27:01,586 [INFO] app.core.scanner: PII Clean: Original='Kann ich damit auch einfach mein Leitungswasser testen?' -> Anonymized='Kann ich damit auch einfach mein Leitungswasser testen?'
+2025-12-17 13:27:01,586 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Kann ich damit auch einfach mein Leitungswasser testen?
+2025-12-17 13:27:01,983 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:27:03,517 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:27:04,473 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_tw3s8lrUgUg6Esf5h7HbhoEo "HTTP/1.1 200 OK"
+2025-12-17 13:27:05,290 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_tw3s8lrUgUg6Esf5h7HbhoEo "HTTP/1.1 200 OK"
+2025-12-17 13:27:06,186 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_tw3s8lrUgUg6Esf5h7HbhoEo "HTTP/1.1 200 OK"
+2025-12-17 13:27:07,180 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_tw3s8lrUgUg6Esf5h7HbhoEo "HTTP/1.1 200 OK"
+2025-12-17 13:27:07,401 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:27:07,404 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Das Igloo Pro kann Leitungswasser nicht direkt testen. Du brauchst dafür spezielle Teststreifen, die auf Wasseranalyse ausgelegt sind. Hast du schon solche Teststreifen?
+2025-12-17 13:27:27,412 [INFO] app.core.scanner: PII Clean: Original='Muss ich die Tests direkt bei euch kaufen oder gehen auch andere?' -> Anonymized='Muss ich die Tests direkt bei euch kaufen oder gehen auch andere?'
+2025-12-17 13:27:27,412 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Muss ich die Tests direkt bei euch kaufen oder gehen auch andere?
+2025-12-17 13:27:27,895 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:27:29,049 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:27:30,474 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_VlIRkUElnJzprpeKm7eLqS7J "HTTP/1.1 200 OK"
+2025-12-17 13:27:31,323 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_VlIRkUElnJzprpeKm7eLqS7J "HTTP/1.1 200 OK"
+2025-12-17 13:27:32,198 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_VlIRkUElnJzprpeKm7eLqS7J "HTTP/1.1 200 OK"
+2025-12-17 13:27:33,055 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_VlIRkUElnJzprpeKm7eLqS7J "HTTP/1.1 200 OK"
+2025-12-17 13:27:33,266 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:27:33,267 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Du kannst auch andere Teststreifen verwenden, solange sie mit der Technologie des Igloo Pro kompatibel sind (Lateral-Flow-Tests für Fluoreszenz und Kolorimetrie). Brauchst du Tipps, welche Marken gut funktionieren könnten?
+2025-12-17 13:27:42,924 [INFO] app.core.scanner: PII Clean: Original='Ja' -> Anonymized='Ja'
+2025-12-17 13:27:42,925 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Ja
+2025-12-17 13:27:43,334 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:27:44,444 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:27:45,273 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gPfw1VDkSSLMUOX5mUBqXt9v "HTTP/1.1 200 OK"
+2025-12-17 13:27:46,121 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gPfw1VDkSSLMUOX5mUBqXt9v "HTTP/1.1 200 OK"
+2025-12-17 13:27:47,079 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gPfw1VDkSSLMUOX5mUBqXt9v "HTTP/1.1 200 OK"
+2025-12-17 13:27:48,286 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gPfw1VDkSSLMUOX5mUBqXt9v "HTTP/1.1 200 OK"
+2025-12-17 13:27:48,513 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:27:48,517 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Am besten fragst du direkt bei Adriano nach (contact@polarisdx.net). Er kann dir genau sagen, welche Teststreifen mit dem Igloo Pro gut funktionieren. Brauchst du noch etwas anderes?
+2025-12-17 13:29:36,661 [INFO] app.core.scanner: PII Clean: Original='Erzähl mir mal einen Witz über Labore.' -> Anonymized='Erzähl mir mal einen Witz über Labore.'
+2025-12-17 13:29:36,662 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Erzähl mir mal einen Witz über Labore.
+2025-12-17 13:29:37,148 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:29:38,200 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:29:39,020 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_i58VGqLmLq3H9aRtzwN1d42u "HTTP/1.1 200 OK"
+2025-12-17 13:29:39,959 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_i58VGqLmLq3H9aRtzwN1d42u "HTTP/1.1 200 OK"
+2025-12-17 13:29:40,900 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_i58VGqLmLq3H9aRtzwN1d42u "HTTP/1.1 200 OK"
+2025-12-17 13:29:41,770 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_i58VGqLmLq3H9aRtzwN1d42u "HTTP/1.1 200 OK"
+2025-12-17 13:29:42,709 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_i58VGqLmLq3H9aRtzwN1d42u "HTTP/1.1 200 OK"
+2025-12-17 13:29:42,946 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:29:42,948 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Klar, hier kommt einer: Warum tragen Laboranten immer weiße Kittel? Damit man sie nicht mit den wirklich verrückten Wissenschaftlern verwechselt! Brauchst du noch Infos zum Igloo Pro oder sonst was?
+2025-12-17 13:30:22,116 [INFO] app.core.scanner: PII Clean: Original='Kann man mit dem IGLOO Frauen beeindrucken?' -> Anonymized='Kann man mit dem IGLOO Frauen beeindrucken?'
+2025-12-17 13:30:22,117 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Kann man mit dem IGLOO Frauen beeindrucken?
+2025-12-17 13:30:22,756 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:30:24,366 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:30:25,295 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_vGLvs7s7JrHZkXrr8H7XhUHW "HTTP/1.1 200 OK"
+2025-12-17 13:30:26,204 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_vGLvs7s7JrHZkXrr8H7XhUHW "HTTP/1.1 200 OK"
+2025-12-17 13:30:27,011 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_vGLvs7s7JrHZkXrr8H7XhUHW "HTTP/1.1 200 OK"
+2025-12-17 13:30:27,852 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_vGLvs7s7JrHZkXrr8H7XhUHW "HTTP/1.1 200 OK"
+2025-12-17 13:30:28,702 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_vGLvs7s7JrHZkXrr8H7XhUHW "HTTP/1.1 200 OK"
+2025-12-17 13:30:29,545 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_vGLvs7s7JrHZkXrr8H7XhUHW "HTTP/1.1 200 OK"
+2025-12-17 13:30:30,421 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_vGLvs7s7JrHZkXrr8H7XhUHW "HTTP/1.1 200 OK"
+2025-12-17 13:30:31,301 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_vGLvs7s7JrHZkXrr8H7XhUHW "HTTP/1.1 200 OK"
+2025-12-17 13:30:31,656 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:30:31,668 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Naja, wenn sie auf innovative Technologie stehen, könnte das Igloo Pro schon Eindruck machen! Es zeigt immerhin, dass man auf moderne und präzise Analysemethoden setzt. Brauchst du noch Details dazu, wie das Igloo Pro funktioniert?
+2025-12-17 13:30:57,036 [INFO] app.core.scanner: PII Clean: Original='Wie kommen die Ergebnisse vom Gerät in mein System?' -> Anonymized='Wie kommen die Ergebnisse vom Gerät in mein System?'
+2025-12-17 13:30:57,036 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Wie kommen die Ergebnisse vom Gerät in mein System?
+2025-12-17 13:30:57,469 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:30:58,793 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:30:59,600 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_IcjRu935sgOBuipF2OwYxSaP "HTTP/1.1 200 OK"
+2025-12-17 13:31:00,523 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_IcjRu935sgOBuipF2OwYxSaP "HTTP/1.1 200 OK"
+2025-12-17 13:31:01,370 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_IcjRu935sgOBuipF2OwYxSaP "HTTP/1.1 200 OK"
+2025-12-17 13:31:02,288 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_IcjRu935sgOBuipF2OwYxSaP "HTTP/1.1 200 OK"
+2025-12-17 13:31:03,208 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_IcjRu935sgOBuipF2OwYxSaP "HTTP/1.1 200 OK"
+2025-12-17 13:31:03,513 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:31:03,516 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Die Ergebnisse vom Igloo Pro können über eine USB-Verbindung oder drahtlos über Bluetooth in dein System übertragen werden. Ist das die Info, die du gebraucht hast?
+2025-12-17 13:31:30,766 [INFO] app.core.scanner: PII Clean: Original='Ich habe eine ganz komplizierte technische Frage zum Sensor, wer kann helfen?' -> Anonymized='Ich habe eine ganz komplizierte technische Frage zum Sensor, wer kann helfen?'
+2025-12-17 13:31:30,766 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Ich habe eine ganz komplizierte technische Frage zum Sensor, wer kann helfen?
+2025-12-17 13:31:31,602 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 13:31:33,266 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 13:31:34,163 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gIbnptR0ns99oyZ7aQqBVNqH "HTTP/1.1 200 OK"
+2025-12-17 13:31:35,013 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gIbnptR0ns99oyZ7aQqBVNqH "HTTP/1.1 200 OK"
+2025-12-17 13:31:35,821 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gIbnptR0ns99oyZ7aQqBVNqH "HTTP/1.1 200 OK"
+2025-12-17 13:31:36,650 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gIbnptR0ns99oyZ7aQqBVNqH "HTTP/1.1 200 OK"
+2025-12-17 13:31:37,704 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gIbnptR0ns99oyZ7aQqBVNqH "HTTP/1.1 200 OK"
+2025-12-17 13:31:38,663 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gIbnptR0ns99oyZ7aQqBVNqH "HTTP/1.1 200 OK"
+2025-12-17 13:31:39,585 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gIbnptR0ns99oyZ7aQqBVNqH "HTTP/1.1 200 OK"
+2025-12-17 13:31:40,472 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gIbnptR0ns99oyZ7aQqBVNqH "HTTP/1.1 200 OK"
+2025-12-17 13:31:41,566 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_gIbnptR0ns99oyZ7aQqBVNqH "HTTP/1.1 200 OK"
+2025-12-17 13:31:41,865 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 13:31:41,869 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Für komplizierte technische Fragen ist Adriano Zucalla die beste Anlaufstelle. Schreib ihm einfach eine E-Mail an contact@polarisdx.net, und er wird dir sicher weiterhelfen können. Brauchst du noch etwas anderes?
+2025-12-17 14:03:34,020 [INFO] app.core.scanner: PII Clean: Original='Wie genau ist die genauigkeit von crp' -> Anonymized='Wie genau ist die genauigkeit von <ORGANIZATION_e0eb2cae>'
+2025-12-17 14:03:34,021 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Wie genau ist die genauigkeit von <ORGANIZATION_e0eb2cae>
+2025-12-17 14:03:34,814 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 14:03:36,618 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 14:03:37,447 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_pq3KrEUFY9V9i2DOsrn2XvPk "HTTP/1.1 200 OK"
+2025-12-17 14:03:38,665 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_pq3KrEUFY9V9i2DOsrn2XvPk "HTTP/1.1 200 OK"
+2025-12-17 14:03:40,351 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_pq3KrEUFY9V9i2DOsrn2XvPk "HTTP/1.1 200 OK"
+2025-12-17 14:03:41,615 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_pq3KrEUFY9V9i2DOsrn2XvPk "HTTP/1.1 200 OK"
+2025-12-17 14:03:42,449 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_pq3KrEUFY9V9i2DOsrn2XvPk "HTTP/1.1 200 OK"
+2025-12-17 14:03:43,287 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_pq3KrEUFY9V9i2DOsrn2XvPk "HTTP/1.1 200 OK"
+2025-12-17 14:03:43,786 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 14:03:43,797 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Die Genauigkeit des Igloo Pro hängt von den verwendeten Teststreifen ab, aber generell ist es sehr präzise bei der Auslesung von Lateral-Flow-Tests. Möchtest du spezifische Daten zur Genauigkeit für bestimmte Tests?
+2025-12-17 14:03:58,370 [INFO] app.core.scanner: PII Clean: Original='Genau CRP' -> Anonymized='Genau CRP'
+2025-12-17 14:03:58,371 [INFO] root: OpenAI Request [Session sess_5f4x96lbz]: Genau CRP
+2025-12-17 14:03:58,738 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages "HTTP/1.1 200 OK"
+2025-12-17 14:04:00,273 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs "HTTP/1.1 200 OK"
+2025-12-17 14:04:01,112 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_lOECG5Let1kOAQZoF9NfHBU0 "HTTP/1.1 200 OK"
+2025-12-17 14:04:03,647 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_lOECG5Let1kOAQZoF9NfHBU0 "HTTP/1.1 200 OK"
+2025-12-17 14:04:04,577 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_lOECG5Let1kOAQZoF9NfHBU0 "HTTP/1.1 200 OK"
+2025-12-17 14:04:05,482 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/runs/run_lOECG5Let1kOAQZoF9NfHBU0 "HTTP/1.1 200 OK"
+2025-12-17 14:04:05,703 [INFO] httpx: HTTP Request: GET https://api.openai.com/v1/threads/thread_1bfZbyxMHVNvmrrLIv8aydWf/messages?limit=1 "HTTP/1.1 200 OK"
+2025-12-17 14:04:05,705 [INFO] root: OpenAI Response [Session sess_5f4x96lbz]: Für spezifische Genauigkeitsdaten zum CRP-Test mit dem Igloo Pro wäre es am besten, direkt bei Adriano Zucalla nachzufragen. Er kann dir die genauen Spezifikationen und Leistungsdaten geben. Soll ich dir seine Kontaktdaten nochmal schicken?
+2025-12-17 14:05:46,799 [INFO] uvicorn.error: Shutting down
+2025-12-17 14:05:46,904 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-12-17 14:05:46,912 [INFO] uvicorn.error: Application shutdown complete.
+2025-12-17 14:05:46,916 [INFO] uvicorn.error: Finished server process [8]
