@@ -17,4 +17,3 @@ def get_redis_client() -> redis.Redis:
 
 
 redis_client = get_redis_client()
-

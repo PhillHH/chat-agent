@@ -19,3 +19,12 @@
 2025-12-18 10:42:25,278 [INFO] uvicorn.error: Waiting for application shutdown.
 2025-12-18 10:42:25,279 [INFO] uvicorn.error: Application shutdown complete.
 2025-12-18 10:42:25,280 [INFO] uvicorn.error: Finished server process [8]
+2025-12-18 11:31:26,438 [INFO] uvicorn.error: Started server process [6657]
+2025-12-18 11:31:26,439 [INFO] uvicorn.error: Waiting for application startup.
+2025-12-18 11:32:47,577 [INFO] gliner.model: Loading the following GLiNER type: <class 'gliner.model.UniEncoderSpanGLiNER'>...
+2025-12-18 11:32:55,339 [INFO] uvicorn.error: Application startup complete.
+2025-12-18 11:32:55,340 [INFO] uvicorn.error: Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2025-12-18 11:33:31,008 [INFO] uvicorn.error: Shutting down
+2025-12-18 11:33:31,109 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-12-18 11:33:31,110 [INFO] uvicorn.error: Application shutdown complete.
+2025-12-18 11:33:31,110 [INFO] uvicorn.error: Finished server process [6657]

@@ -1,7 +1,10 @@
 """FastAPI-Einstiegspunkt für das Secure PolarisDX AI-Chat Gateway."""
 import logging
+import os
 
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 
 from app.core.assistant import AIAssistant
 from app.core.config import Settings
@@ -10,9 +13,10 @@ from app.core.logging_setup import setup_logging
 from app.core.notifier import TeamsNotifier
 from app.core.scanner import PIIScanner
 from app.core.vault import PIIVault
+from app.core.db_sqla import init_db
+
 from app.routers import chat as chat_router
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+from app.routers import admin as admin_router
 
 
 # Initialisierung der App
@@ -34,17 +38,26 @@ app.mount("/static", StaticFiles(directory="app/static"), name="static")
 async def get_test_chat():
     return FileResponse("app/static/chat.html")
 
+# Admin Frontend Route (nur aktiv wenn Backend aktiv)
+if os.getenv("ENABLE_ADMIN_BACKEND", "false").lower() == "true":
+    @app.get("/admin-panel", include_in_schema=False)
+    async def get_admin_panel():
+        return FileResponse("app/static/admin.html")
+
 
 @app.on_event("startup")
 def startup_event() -> None:
     """Initialisiert alle Services beim Start der Anwendung.
 
-    - Prüft die Redis-Verbindung (Ping) beim Aufbau des Clients.
-    - Lädt das GLiNER-Modell über den Scanner, damit spätere Requests warm sind.
-    - Stellt sicher, dass die Logging-Konfiguration aktiv ist, um OpenAI-Aufrufe nachzuvollziehen.
+    - Initialisiert SQLite Datenbank.
+    - Prüft die Redis-Verbindung (Ping).
+    - Lädt das GLiNER-Modell.
     """
     # Settings laden
     settings = Settings()
+
+    # DB Initialisieren
+    init_db()
 
     # Core Services initialisieren und im App State speichern
     # Redis Client
@@ -61,9 +74,12 @@ def startup_event() -> None:
     app.state.notifier = TeamsNotifier()
 
     print("🚀 Secure PolarisDX AI-Chat Gateway ist initialisiert.")
+    if os.getenv("ENABLE_ADMIN_BACKEND", "false").lower() == "true":
+        print("✅ Admin Backend ist AKTIVIERT.")
+    else:
+        print("ℹ️ Admin Backend ist DEAKTIVIERT (Setze ENABLE_ADMIN_BACKEND=true zum Aktivieren).")
 
 
 # Router registrieren
-# Der Router wird als chat_router.router importiert
 app.include_router(chat_router.router)
-
+app.include_router(admin_router.router)
