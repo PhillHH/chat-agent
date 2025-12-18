@@ -100,3 +100,63 @@ class PIIScanner:
             return self.vault.get(placeholder)
 
         return self.placeholder_pattern.sub(replace_placeholder, text)
+
+    async def restore_stream(self, token_generator):
+        """Streaming-Version von restore. Nimmt einen Generator von Tokens entgegen
+        und yieldet die Tokens, wobei Platzhalter on-the-fly ersetzt werden."""
+        buffer = ""
+        async for token in token_generator:
+            buffer += token
+
+            while True:
+                # Suche nach Beginn eines Platzhalters
+                start_idx = buffer.find("<")
+                if start_idx == -1:
+                    # Kein '<' gefunden, Puffer sicher ausgeben
+                    if buffer:
+                        yield buffer
+                        buffer = ""
+                    break
+
+                # Wir haben ein '<'. Alles davor ausgeben.
+                if start_idx > 0:
+                    yield buffer[:start_idx]
+                    buffer = buffer[start_idx:]
+                    # buffer beginnt jetzt mit '<'
+
+                # Suche nach Ende des Platzhalters
+                end_idx = buffer.find(">")
+                if end_idx != -1:
+                    # Kompletter Tag gefunden
+                    candidate = buffer[: end_idx + 1]
+
+                    # Validieren, ob es ein bekannter PII-Platzhalter ist
+                    if self.placeholder_pattern.fullmatch(candidate):
+                        # Ersetzen
+                        original = self.vault.get(candidate)
+                        yield original
+                    else:
+                        # Kein PII-Platzhalter (z.B. <br> oder < 5), original ausgeben
+                        yield candidate
+
+                    buffer = buffer[end_idx + 1 :]
+                else:
+                    # '<' ist da, aber kein '>'.
+                    # Check, ob es überhaupt ein gültiger Anfang sein kann.
+                    # Unsere Platzhalter fangen mit <[A-Z] an.
+                    # Wenn das Zeichen nach < kein Großbuchstabe ist, ist es kein PII-Tag.
+                    # (Ausnahme: Puffer ist nur "<")
+                    if len(buffer) > 1:
+                        second_char = buffer[1]
+                        # Wenn kein Großbuchstabe, dann ist es kein PII-Start
+                        if not ("A" <= second_char <= "Z"):
+                            yield buffer[0]
+                            buffer = buffer[1:]
+                            continue
+
+                    # Es könnte ein valider Anfang sein, wir warten auf mehr Tokens.
+                    break
+
+        # Reste im Puffer ausgeben
+        if buffer:
+            yield buffer

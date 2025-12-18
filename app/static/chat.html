@@ -58,13 +58,39 @@
                     throw new Error("API Error: " + response.statusText);
                 }
 
-                const data = await response.json();
-                appendMessage(data.response, 'bot');
+                const contentType = response.headers.get("content-type");
 
-                if (data.status === 'ESCALATION_NEEDED') {
-                    appendMessage("⚠️ Eskalation an Teams ausgelöst.", 'system');
-                } else if (data.status === 'HUMAN_MODE') {
-                    appendMessage("ℹ️ Human Mode aktiv.", 'system');
+                if (contentType && contentType.includes("application/json")) {
+                    // Handle JSON response (e.g. Human Mode)
+                    const data = await response.json();
+                    appendMessage(data.response, 'bot');
+
+                    if (data.status === 'ESCALATION_NEEDED') {
+                        appendMessage("⚠️ Eskalation an Teams ausgelöst.", 'system');
+                    } else if (data.status === 'HUMAN_MODE') {
+                        appendMessage("ℹ️ Human Mode aktiv.", 'system');
+                    }
+                } else {
+                    // Handle Streaming Response
+                    const reader = response.body.getReader();
+                    const decoder = new TextDecoder("utf-8");
+                    let botMessageDiv = null;
+
+                    // Create bot message container immediately
+                    const div = document.createElement('div');
+                    div.classList.add('message', 'bot');
+                    chatBox.appendChild(div);
+                    botMessageDiv = div;
+                    chatBox.scrollTop = chatBox.scrollHeight;
+
+                    while (true) {
+                        const { done, value } = await reader.read();
+                        if (done) break;
+
+                        const chunk = decoder.decode(value, {stream: true});
+                        botMessageDiv.textContent += chunk;
+                        chatBox.scrollTop = chatBox.scrollHeight;
+                    }
                 }
 
             } catch (err) {
