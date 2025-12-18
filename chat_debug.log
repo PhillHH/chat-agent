@@ -28,3 +28,37 @@
 2025-12-18 11:33:31,109 [INFO] uvicorn.error: Waiting for application shutdown.
 2025-12-18 11:33:31,110 [INFO] uvicorn.error: Application shutdown complete.
 2025-12-18 11:33:31,110 [INFO] uvicorn.error: Finished server process [6657]
+2025-12-18 12:22:17,292 [INFO] uvicorn.error: Started server process [8]
+2025-12-18 12:22:17,292 [INFO] uvicorn.error: Waiting for application startup.
+2025-12-18 12:24:25,137 [INFO] gliner.model: Loading the following GLiNER type: <class 'gliner.model.UniEncoderSpanGLiNER'>...
+2025-12-18 12:24:32,878 [INFO] uvicorn.error: Application startup complete.
+2025-12-18 12:30:51,291 [INFO] uvicorn.error: Shutting down
+2025-12-18 12:30:51,393 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-12-18 12:30:51,397 [INFO] uvicorn.error: Application shutdown complete.
+2025-12-18 12:30:51,401 [INFO] uvicorn.error: Finished server process [8]
+2025-12-18 12:31:05,442 [INFO] uvicorn.error: Started server process [8]
+2025-12-18 12:31:05,443 [INFO] uvicorn.error: Waiting for application startup.
+2025-12-18 12:33:11,990 [INFO] gliner.model: Loading the following GLiNER type: <class 'gliner.model.UniEncoderSpanGLiNER'>...
+2025-12-18 12:33:19,685 [INFO] uvicorn.error: Application startup complete.
+2025-12-18 12:35:17,538 [INFO] app.core.scanner: PII Clean: Original='Ich brauch einen Igloo,' -> Anonymized='Ich brauch einen Igloo,'
+2025-12-18 12:35:18,481 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-18 12:35:18,714 [INFO] root: OpenAI Request [Session sess_vpqitxtc7]: Ich brauch einen Igloo,
+2025-12-18 12:35:19,764 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_P8Pf6eE8HhT8G33qp7Ady4RS/messages "HTTP/1.1 200 OK"
+2025-12-18 12:35:22,101 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_P8Pf6eE8HhT8G33qp7Ady4RS/runs "HTTP/1.1 200 OK"
+2025-12-18 12:36:01,499 [INFO] app.core.scanner: PII Clean: Original='Ja, welche Tests kann ich damit machen?' -> Anonymized='Ja, welche Tests kann ich damit machen?'
+2025-12-18 12:36:01,500 [INFO] root: OpenAI Request [Session sess_vpqitxtc7]: Ja, welche Tests kann ich damit machen?
+2025-12-18 12:36:02,297 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_P8Pf6eE8HhT8G33qp7Ady4RS/messages "HTTP/1.1 200 OK"
+2025-12-18 12:36:03,626 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_P8Pf6eE8HhT8G33qp7Ady4RS/runs "HTTP/1.1 200 OK"
+2025-12-18 12:38:01,396 [INFO] app.core.scanner: PII Clean: Original='Guten Tag meine Name Borat Borat' -> Anonymized='Guten Tag meine Name <PERSON_9645d50b> <PERSON_4234c091>'
+2025-12-18 12:38:01,875 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-18 12:38:01,876 [INFO] root: OpenAI Request [Session sess_1jrz68j93]: Guten Tag meine Name <PERSON_9645d50b> <PERSON_4234c091>
+2025-12-18 12:38:02,263 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_zPkv03OnkbAKMJjDHPjGYPLn/messages "HTTP/1.1 200 OK"
+2025-12-18 12:38:03,791 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_zPkv03OnkbAKMJjDHPjGYPLn/runs "HTTP/1.1 200 OK"
+2025-12-18 12:38:28,542 [INFO] app.core.scanner: PII Clean: Original='wie heiße ich ?' -> Anonymized='wie heiße ich ?'
+2025-12-18 12:38:28,543 [INFO] root: OpenAI Request [Session sess_1jrz68j93]: wie heiße ich ?
+2025-12-18 12:38:29,192 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_zPkv03OnkbAKMJjDHPjGYPLn/messages "HTTP/1.1 200 OK"
+2025-12-18 12:38:31,221 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_zPkv03OnkbAKMJjDHPjGYPLn/runs "HTTP/1.1 200 OK"
+2025-12-18 14:31:43,682 [INFO] uvicorn.error: Shutting down
+2025-12-18 14:31:43,797 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-12-18 14:31:43,830 [INFO] uvicorn.error: Application shutdown complete.
+2025-12-18 14:31:43,832 [INFO] uvicorn.error: Finished server process [8]
