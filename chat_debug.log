@@ -1,0 +1,21 @@
+2025-12-18 10:33:17,390 [INFO] uvicorn.error: Started server process [8]
+2025-12-18 10:33:17,391 [INFO] uvicorn.error: Waiting for application startup.
+2025-12-18 10:35:23,445 [INFO] gliner.model: Loading the following GLiNER type: <class 'gliner.model.UniEncoderSpanGLiNER'>...
+2025-12-18 10:35:31,634 [INFO] uvicorn.error: Application startup complete.
+2025-12-18 10:35:51,898 [INFO] app.core.scanner: PII Clean: Original='Einen wunderschönen Guten Morgen' -> Anonymized='Einen wunderschönen Guten Morgen'
+2025-12-18 10:35:53,024 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads "HTTP/1.1 200 OK"
+2025-12-18 10:35:53,035 [INFO] root: OpenAI Request [Session sess_1mbdpg0tq]: Einen wunderschönen Guten Morgen
+2025-12-18 10:35:53,727 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_flLo1BnYwm2uNK9X0G9Bc8pY/messages "HTTP/1.1 200 OK"
+2025-12-18 10:35:55,516 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_flLo1BnYwm2uNK9X0G9Bc8pY/runs "HTTP/1.1 200 OK"
+2025-12-18 10:36:41,081 [INFO] app.core.scanner: PII Clean: Original='Ich brauche 25 Vitamin D3 TESTS, wie schnell können die da sein?' -> Anonymized='Ich brauche 25 Vitamin D3 TESTS, wie schnell können die da sein?'
+2025-12-18 10:36:41,082 [INFO] root: OpenAI Request [Session sess_1mbdpg0tq]: Ich brauche 25 Vitamin D3 TESTS, wie schnell können die da sein?
+2025-12-18 10:36:41,484 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_flLo1BnYwm2uNK9X0G9Bc8pY/messages "HTTP/1.1 200 OK"
+2025-12-18 10:36:42,721 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_flLo1BnYwm2uNK9X0G9Bc8pY/runs "HTTP/1.1 200 OK"
+2025-12-18 10:37:30,449 [INFO] app.core.scanner: PII Clean: Original='Kann ich eine telefonnummer haben wo ich anrufen kann?' -> Anonymized='Kann ich eine telefonnummer haben wo ich anrufen kann?'
+2025-12-18 10:37:30,449 [INFO] root: OpenAI Request [Session sess_1mbdpg0tq]: Kann ich eine telefonnummer haben wo ich anrufen kann?
+2025-12-18 10:37:31,747 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_flLo1BnYwm2uNK9X0G9Bc8pY/messages "HTTP/1.1 200 OK"
+2025-12-18 10:37:33,124 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/threads/thread_flLo1BnYwm2uNK9X0G9Bc8pY/runs "HTTP/1.1 200 OK"
+2025-12-18 10:42:25,175 [INFO] uvicorn.error: Shutting down
+2025-12-18 10:42:25,278 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-12-18 10:42:25,279 [INFO] uvicorn.error: Application shutdown complete.
+2025-12-18 10:42:25,280 [INFO] uvicorn.error: Finished server process [8]
