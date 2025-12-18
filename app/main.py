@@ -17,6 +17,7 @@ from app.core.db_sqla import init_db
 
 from app.routers import chat as chat_router
 from app.routers import admin as admin_router
+from app.routers import teams as teams_router
 
 
 # Initialisierung der App
@@ -37,6 +38,10 @@ app.mount("/static", StaticFiles(directory="app/static"), name="static")
 @app.get("/test-chat", include_in_schema=False)
 async def get_test_chat():
     return FileResponse("app/static/chat.html")
+
+@app.get("/test-chat-ws", include_in_schema=False)
+async def get_test_chat_ws():
+    return FileResponse("app/static/chat_v2.html")
 
 # Admin Frontend Route (nur aktiv wenn Backend aktiv)
 if os.getenv("ENABLE_ADMIN_BACKEND", "false").lower() == "true":
@@ -83,3 +88,4 @@ def startup_event() -> None:
 # Router registrieren
 app.include_router(chat_router.router)
 app.include_router(admin_router.router)
+app.include_router(teams_router.router)
