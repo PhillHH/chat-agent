@@ -27,73 +27,35 @@ Das Dashboard ist unter `/admin-panel` erreichbar (sofern aktiviert). Es bietet 
 
 ## 2. Technische Schnittstelle: Frontend ↔ Chatbot
 
-Das Chat-Frontend kommuniziert über eine REST-API mit dem Gateway.
+Das Chat-Frontend kommuniziert über eine REST-API oder WebSockets mit dem Gateway.
 
-### Endpunkt: `/chat/message` (POST)
-Dient zum Senden von Nachrichten und Empfangen der Antwort.
+**Detaillierte Integrationsanleitung:** [FRONTEND_INTEGRATION.md](FRONTEND_INTEGRATION.md)
 
-**Request Body (JSON):**
-```json
-{
-  "session_id": "string",  // Eindeutige ID der Sitzung
-  "message": "string"      // Nachricht des Nutzers
-}
-```
+### Haupt-Endpunkt (WebSocket): `/chat/ws/{session_id}`
+Dies ist der empfohlene Weg für moderne Chat-Interfaces. Er ermöglicht bidirektionale Kommunikation (Server kann Nachrichten vom Agenten pushen).
 
-**Antwort-Verhalten:**
-Die API entscheidet dynamisch über das Antwortformat:
-
-1.  **Streaming Response (Standard):**
-    - Überträgt die KI-Antwort Token für Token (Text/Plain Stream).
-    - Dies ermöglicht eine geringe Latenz ("Time to First Byte").
-    - PII (personenbezogene Daten) werden "on-the-fly" wiederhergestellt.
-    - Das Frontend muss diesen Stream lesen und inkrementell anzeigen.
-
-2.  **JSON Response (Spezialfälle):**
-    - Tritt auf bei `HUMAN_MODE` (Mensch übernimmt) oder Fehlern.
-    - Format:
-      ```json
-      {
-        "session_id": "...",
-        "response": "Ein menschlicher Mitarbeiter...",
-        "status": "HUMAN_MODE"
-      }
-      ```
-
-**Ablauf im Backend:**
-1.  **PII-Filterung:** Die Nachricht wird gescannt (Regex + GLiNER) und anonymisiert.
-2.  **Persistenz:** Die Original-Nachricht (User) wird in der SQLite-Datenbank gespeichert.
-3.  **AI-Inferenz:** Der anonymisierte Text geht an Azure OpenAI / OpenAI.
-4.  **Re-Personalisierung:** Die Antwort der KI wird gestreamt, wobei Platzhalter (z.B. `<PERSON_1>`) durch die echten Daten aus dem Vault ersetzt werden.
-5.  **Persistenz:** Der fertig zusammengesetzte Antworttext wird asynchron in der Datenbank gespeichert.
+### Legacy Endpunkt (HTTP POST): `/chat/message`
+Dient zum Senden von Nachrichten und Empfangen der Antwort per Server-Sent-Events (Streaming).
 
 ---
 
-## 3. Anbindung an Microsoft Teams (Eskalation)
+## 3. Anbindung an Microsoft Teams (Eskalation & Live-Chat)
 
-Das System verfügt über eine automatische Eskalationslogik, wenn die KI nicht weiterweiß oder der Nutzer einen menschlichen Mitarbeiter anfordert.
+Das System verfügt über eine bidirektionale Integration mit Microsoft Teams.
 
-### Trigger
+**Konfigurationsanleitung:** [TEAMS_BOT_GUIDE.md](TEAMS_BOT_GUIDE.md)
+
+### Eskalation
 Die Eskalation wird ausgelöst durch:
 - Das Token `ESKALATION_NOETIG` in der Antwort der KI (vom System-Prompt gesteuert).
-- (Optional) Explizite Logik im Code.
 
 ### Ablauf
-1.  **Erkennung:** Der `ChatRouter` analysiert den Antwort-Stream der KI. Wird das Eskalations-Token gefunden, bricht er den normalen KI-Modus ab.
-2.  **Status-Wechsel:** Der Status der Session im `PIIVault` wird auf `HUMAN` gesetzt. Ab jetzt werden alle weiteren Nachrichten an `/chat/message` mit einer Standardantwort ("Bitte warten...") beantwortet, bis ein Mensch übernimmt (bzw. der Status zurückgesetzt wird).
+1.  **Erkennung:** Der `ChatRouter` analysiert den Antwort-Stream der KI.
+2.  **Status-Wechsel:** Der Status der Session wird auf `HUMAN` gesetzt.
 3.  **Benachrichtigung:**
-    - Der `TeamsNotifier` sammelt den gesamten Chat-Verlauf (aus dem OpenAI Thread History).
-    - Er sendet eine **Adaptive Card** an einen konfigurierten Teams Webhook (`TEAMS_WEBHOOK_URL`).
-    - Die Karte enthält:
-        - Session ID
-        - Den kompletten bisherigen Dialog
-        - Hinweis auf Dringlichkeit
-
-### Konfiguration
-Die URL für den Webhook wird in den Environment-Variables hinterlegt:
-```bash
-TEAMS_WEBHOOK_URL="https://outlook.office.com/webhook/..."
-```
+    - Eine Nachricht/Karte wird an Teams gesendet.
+    - Ab jetzt werden Nachrichten des Kunden direkt an Teams weitergeleitet.
+    - Antworten des Mitarbeiters in Teams werden über den WebSocket direkt an den Kunden im Web-Chat gesendet.
 
 ---
 

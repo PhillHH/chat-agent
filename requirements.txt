@@ -17,3 +17,6 @@ python-dotenv>=1.0.1
 requests>=2.31.0
 httpx>=0.26.0
 sqlalchemy>=2.0.0
+botbuilder-core
+botbuilder-schema
+botbuilder-integration-aiohttp
